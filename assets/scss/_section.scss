@@ -1,0 +1,58 @@
+section {
+  padding: 35px 0;
+  overflow: hidden;
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 15px;
+    @media (max-width: 1024px) {
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 24px;
+      margin-bottom: 0;
+      color: $black;
+
+      @media (max-width: 1024px) {
+        font-size: 24px;
+      }
+    }
+  }
+  .section-paragraph {
+    margin-bottom: 0;
+    position: relative;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 41px;
+    color: $base-3;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 55px;
+    @media (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 145px;
+      height: 5px;
+      background: $primary-4;
+      bottom: 0px;
+      left: calc(50% - 72px);
+    }
+  }
+  .section-paragraph-small {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: $black;
+    @media (max-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+}

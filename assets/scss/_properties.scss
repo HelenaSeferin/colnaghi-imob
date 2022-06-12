@@ -1,0 +1,245 @@
+.properties {
+  @media (max-width: 1024px) {
+    padding: 50px 0 10px;
+  }
+  .section-paragraph {
+    color: $black;
+  }
+
+  small {
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    color: #6a6a6a;
+    margin-top: 20px;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .box-propierties-slide {
+    padding: 0 0 60px;
+    display: grid;
+    grid-template-columns: repeat(10, 80vw);
+    overflow-x: scroll;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    @media (max-width: 1450px) {
+      padding: 0 0 30px;
+    }
+
+    @media (max-width: 1024px) {
+      overflow-x: initial;
+      .slick-list {
+        padding: 25px 0 !important;
+      }
+    }
+
+    .active {
+      scroll-snap-type: unset;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #a6a6a6;
+      border: 5px solid #fff;
+      margin-left: 130px;
+      margin-right: 130px;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-5;
+      border-radius: 20px;
+      border: 10px solid $primary-5;
+      background-clip: content-box;
+    }
+  }
+  .slick-track {
+    display: flex;
+  }
+  .box-properties {
+    width: 270px;
+    min-width: 270px;
+    margin: 0 10px;
+    min-height: 460px;
+    height: auto;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin: 0 10px;
+    scroll-snap-align: center;
+
+    &:last-child() {
+      margin-right: 0;
+    }
+    .slick-active.slick-center {
+      margin: 0 10px;
+    }
+
+    .properties-image {
+      height: auto;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+
+      img {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+      }
+    }
+
+    .properties-descriptions {
+      padding: 0px 25px 22px;
+
+      .properties-mobile {
+        display: none;
+      }
+
+      @media (max-width: 1024px) {
+        padding: 14px;
+
+        .properties-mobile {
+          display: block;
+          h4 {
+            font-weight: 400;
+            font-size: 13px;
+            color: $primary-3;
+          }
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            color: $base-2;
+          }
+        }
+      }
+      .properties-top {
+        position: relative;
+        .title {
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 45px;
+          color: $base-1;
+          margin-bottom: 0;
+        }
+        .type {
+          font-weight: 400;
+          font-size: 15px;
+          color: $base-3;
+          margin-bottom: 0;
+        }
+        .fav {
+          position: absolute;
+          top: 10px;
+          right: 0;
+
+          .heart {
+            font-size: 25px;
+            color: red;
+            cursor: pointer;
+          }
+        }
+      }
+      .properties-bottom {
+        .price {
+          font-weight: 400;
+          font-size: 17px;
+          color: $base-2;
+          margin-bottom: 5px;
+          margin-top: 5px;
+        }
+        .type {
+          font-weight: 400;
+          font-size: 15px;
+          color: $base-3;
+          margin-bottom: 5px;
+        }
+      }
+      .properties-box {
+        .properties-item {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          align-content: space-between;
+          justify-content: center;
+          border-radius: 8px;
+          width: 71px;
+          height: 71px;
+          padding: 14px 10px;
+          text-align: center;
+          border: 1px solid #dee2e6;
+          margin: 0 5px !important;
+          &:nth-child(2) {
+            margin: 0 20px;
+          }
+          .image {
+            margin: 0 auto;
+          }
+          .value {
+            color: $base-1;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 13px;
+          }
+        }
+
+        .car {
+          .car-img {
+            img {
+              width: 25px;
+            }
+          }
+        }
+
+        .size {
+          .size-img {
+            img {
+              width: 28px;
+            }
+          }
+        }
+
+        .rooms {
+          .rooms-img {
+            img {
+              width: 24px;
+            }
+            .image {
+              margin-bottom: 3px;
+            }
+          }
+          .rooms-value {
+            line-height: 15px;
+          }
+        }
+      }
+      .properties-button {
+        display: flex;
+        justify-content: center;
+        .btn {
+          margin-top: 15px;
+          width: 113px;
+          padding: 9px 11px;
+          font-size: 13px;
+          color: $primary-2;
+          text-align: center;
+          font-weight: 400;
+          border: 2px solid $primary-2;
+          border-radius: 15px;
+          border-radius: 8px;
+
+          &:hover {
+            background-color: $primary-2;
+            transition: 0.3s ease-in-out;
+            color: $background-2;
+          }
+        }
+      }
+    }
+  }
+}

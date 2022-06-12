@@ -1,0 +1,321 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 27px 0;
+  background: $background-2;
+
+  @media (max-width: 1450px) {
+    padding: 15px 0;
+  }
+
+  @media (max-width: 1024px) {
+    background: transparent;
+  }
+
+  .logo {
+    margin: 0 auto;
+    padding: 0;
+    font-weight: 500;
+
+    @media (max-width: 1450px) {
+      img {
+        width: 145px;
+      }
+    }
+  }
+  .logo-mobile {
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+  .navbar {
+    padding-top: 0;
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
+
+      li {
+        position: relative;
+        @media (max-width: 1024px) {
+          padding-bottom: 50px;
+
+          &:nth-child(1) {
+            padding-bottom: 0;
+            z-index: 99999;
+          }
+        }
+
+        &::before {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: $base-3;
+          border-radius: 50%;
+          font-size: 23px;
+          padding: 4px;
+        }
+
+        a:hover,
+        .active,
+        .active:focus,
+        &:hover > a {
+          color: $primary-4;
+        }
+
+        a,
+        a:focus {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 0 10px 30px;
+          font-size: 19px;
+          font-weight: 400;
+          color: $base-1;
+          white-space: nowrap;
+          transition: 0.3s;
+
+          @media (max-width: 1450px) {
+            font-size: 16px;
+            padding: 0 8px;
+          }
+        }
+
+        a i,
+        .navbar a:focus i {
+          font-size: 20px;
+          line-height: 0;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .getstarted,
+    .getstarted:focus {
+      padding: 13px 14px;
+      margin-left: 30px;
+      border-radius: 15px;
+      color: $background-2;
+      font-size: 18px;
+      background-color: $primary-4;
+      font-weight: 700;
+      display: block;
+      width: 145px;
+      text-align: center;
+
+      &:focus:hover {
+        color: #fff;
+        background: $primary-1;
+      }
+      @media (max-width: 1450px) {
+        padding: 12px 17px;
+        font-size: 15px;
+        width: 116px;
+        margin-right: 64px;
+      }
+      @media (max-width: 1300px) {
+        padding: 12px 20px;
+        margin-left: 10px;
+      }
+      @media (max-width: 1024px) {
+        margin-left: 0;
+      }
+    }
+
+    .dropdown {
+      &:hover > ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+      }
+
+      ul {
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: calc(100% + 30px);
+        margin: 0;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        background: #fff;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        transition: 0.3s;
+        border-radius: 4px;
+
+        li {
+          min-width: 200px;
+
+          a {
+            padding: 10px 20px;
+            font-size: 17px !important;
+            text-transform: none;
+            font-weight: 400;
+            color: $base-1;
+
+            i {
+              font-size: 12px;
+            }
+          }
+
+          a:hover,
+          ul .active:hover,
+          ul li:hover > a {
+            color: $primary-1;
+          }
+        }
+      }
+
+      .dropdown ul {
+        top: 0;
+        left: calc(100% - 30px);
+        visibility: hidden;
+
+        &:hover > ul {
+          opacity: 1;
+          top: 0;
+          left: 100%;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+.header-scrolled {
+  background: rgba(255, 255, 255, 0.9) !important;
+  padding: 10px 0 !important;
+}
+@media (max-width: 1024px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/* Mobile Navigation */
+
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+
+  &::before {
+    display: none;
+  }
+
+  span {
+    height: 3px;
+    background-color: $background-2;
+    width: 40px;
+    display: block;
+  }
+  .menu-small {
+    height: 3px;
+    background-color: $background-2;
+    width: 33px;
+    display: block;
+    margin: 7px 0;
+  }
+}
+
+.header-scrolled {
+  .mobile-nav-toggle {
+    span,
+    .menu-small {
+      background-color: $primary-2;
+    }
+  }
+}
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .mobile-nav-toggle {
+    display: block;
+    margin-right: 18px;
+  }
+
+  .navbar ul {
+    display: none !important;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+  z-index: 999;
+
+  ul {
+    display: block !important;
+  }
+
+  .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  ul {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    bottom: 0;
+    left: 0;
+    padding: 40px 45px !important;
+    background-color: $background-2;
+    transition: 0.3s;
+  }
+
+  .dropdown {
+    ul {
+      position: static;
+      display: none;
+      margin: 10px 20px;
+      padding: 10px 0;
+      z-index: 99;
+      opacity: 1;
+      visibility: visible;
+      background: #fff;
+      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    }
+  }
+  .dropdown-mobile {
+    @media (max-width: 1024px) {
+      ul {
+        left: 0 !important;
+        top: 40px !important;
+        height: 120px;
+        padding: 0 !important;
+        width: 300px;
+        li {
+          padding-bottom: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}

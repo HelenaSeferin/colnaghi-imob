@@ -1,0 +1,31 @@
+.btn {
+  color: $background-2;
+  font-weight: 700;
+  font-size: 20px;
+  background: $primary-4;
+  padding: 17px 25px;
+  border-radius: 15px;
+  border: 2px solid $primary-4;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background: $background-2;
+    color: $primary-2;
+    transition: 0.3s ease-in;
+  }
+
+  &--inverse {
+    background: $background-2;
+    color: $primary-4;
+    border: 2px solid $primary-4;
+    &:hover {
+      background: $primary-4;
+      color: $background-2;
+      transition: 0.3s ease-in;
+      border: 2px solid $primary-4;
+    }
+  }
+}

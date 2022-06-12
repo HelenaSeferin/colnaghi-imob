@@ -1,0 +1,40 @@
+.banner {
+  position: relative;
+  margin: 115px 0 0;
+  padding: 0 !important;
+  background-image: url(./../../assets/img/banner/banner.png);
+  height: 874px;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  @media (max-width: 1450px) {
+    height: 620px;
+    margin: 85px 0 0;
+  }
+
+  @media (max-width: 1024px) {
+    margin: 0;
+    height: 880px;
+  }
+  .banner-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    height: 100%;
+
+    h1 {
+      font-weight: 700;
+      font-size: 47px;
+      color: $background-2;
+      margin-bottom: 60px;
+      @media (max-width: 1024px) {
+        font-size: 24px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}

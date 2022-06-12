@@ -1,0 +1,51 @@
+.properties {
+  order: 1;
+  @media (max-width: 1024px) {
+  }
+}
+
+.map-section {
+  order: 2;
+  @media (max-width: 1024px) {
+    order: 4;
+  }
+}
+
+.newsletter {
+  order: 3;
+  @media (max-width: 1024px) {
+    order: 2;
+  }
+}
+
+.district {
+  order: 4;
+  @media (max-width: 1024px) {
+    order: 3;
+  }
+}
+
+.map {
+  order: 5;
+  @media (max-width: 1024px) {
+    order: 5;
+  }
+}
+
+.announce {
+  order: 6;
+  @media (max-width: 1024px) {
+    order: 7;
+  }
+}
+
+.testimonials {
+  order: 7;
+  @media (max-width: 1024px) {
+    order: 6;
+  }
+}
+
+.to-top {
+  order: 8;
+}

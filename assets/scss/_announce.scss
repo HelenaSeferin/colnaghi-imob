@@ -1,0 +1,13 @@
+.announce {
+  .announce-box {
+    padding: 30px 20%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1024px) {
+      padding: 50px 25px !important;
+    }
+  }
+}
