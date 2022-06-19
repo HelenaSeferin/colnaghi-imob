@@ -254,6 +254,15 @@
     $( ".form-sucess" ).hide();
   });
 
+
+  // $('.gallery-slide').slick({
+  //   slidesToShow: 1, 
+  //   variableWidth: true,
+  //   arrows: true,
+   
+  // }); 
+  $('.gallery-slide').slick();
+
   $(document).ready(function() { 
     $(window).bind("resize", function () {
       if ($(this).width() <= 1024) {

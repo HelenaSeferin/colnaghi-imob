@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Colnaghi - Listagem de Produtos</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <meta name="theme-color" content="#58151c" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <link href="assets/scss/slick.css" rel="stylesheet" />
+    <link href="assets/scss/bootstrap-select.min.css" rel="stylesheet" />
+    <!--  CDN -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="assets/scss/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main-header></main-header>
+
+    <main id="internal">
+      <section class="filters">
+        <div class="container">
+          <div class="bs filters-box">
+            <form action="" class="filters-form">
+              <div class="filters-search">
+                <div class="filters-form">
+                  <label for="perfil">Perfil</label>
+                  <select
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="values"
+                    title="Perfil"
+                    id="perfil"
+                  >
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                  </select>
+                </div>
+
+                <div class="filters-form">
+                  <label for="type">Tipo</label>
+                  <select
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="values"
+                    title="Tipo"
+                    id="type"
+                  >
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                  </select>
+                </div>
+
+                <div class="filters-form">
+                  <label for="district">Bairro</label>
+                  <select
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="values"
+                    title="Bairro"
+                    id="district"
+                  >
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                    <option>Opção 4</option>
+                    <option>Opção 5</option>
+                    <option>Opção 6</option>
+                    <option>Opção 7</option>
+                    <option>Opção 8</option>
+                    <option>Opção 9</option>
+                  </select>
+                </div>
+
+                <div class="filters-form">
+                  <label for="rooms">Dormitórios</label>
+                  <select
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="values"
+                    title="Dormitórios"
+                    id="rooms"
+                  >
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                  </select>
+                </div>
+
+                <div class="filters-form">
+                  <label for="suites">Suítes</label>
+                  <select
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="values"
+                    title="Suítes"
+                    id="suites"
+                  >
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                  </select>
+                </div>
+
+                <div class="filters-form">
+                  <label for="meters">m2</label>
+                  <select
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="values"
+                    title="m2"
+                    id="meters"
+                  >
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                  </select>
+                </div>
+
+                <div class="filters-form">
+                  <label for="garage">Vagas</label>
+                  <select
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="values"
+                    title="Vagas"
+                    id="garage"
+                  >
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                  </select>
+                </div>
+
+                <div class="filters-form">
+                  <label for="value">Valor</label>
+                  <input type="text" placeholder="Valor" id="value" />
+                </div>
+              </div>
+              <div class="filters-bottom">
+                <div class="filters-form">
+                  <div class="checkbox filter-mob">
+                    <input
+                      id="check"
+                      type="checkbox"
+                      name="check"
+                      value="check"
+                    />
+                    <label for="check">Em contrução</label>
+                  </div>
+                  <button class="btn-filters">Buscar</button>
+                </div>
+
+                <div class="filters-form">
+                  <span class="filter-mob">Já tenho o código do imóvel</span>
+                  <input
+                    type="text"
+                    placeholder="Código"
+                    id="code"
+                    class="filter-mob"
+                  />
+                  <button class="btn-filters-small filter-mob">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="filters dp-desk">
+        <div class="container filters-form">
+          <div class="checkbox">
+            <input id="checkmob" type="checkbox" name="check" value="check" />
+            <label for="checkmob">Imóveis em contrução</label>
+          </div>
+          <span>Já tenho o código do imóvel</span>
+          <input type="text" placeholder="Código" id="code" />
+          <button class="btn-filters-small">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="listingpage container">
+        <div class="listingpage-box">
+          <div class="result-search">
+            <h2>
+              Encontramos <span class="red">537 imóveis</span> na sua busca
+            </h2>
+            <p class="filter-mob">
+              Os imóveis que você mais gostar
+              <span class="red"> Salve nos Favoritos</span>
+            </p>
+          </div>
+
+          <div class="search">
+            <div class="search-form">
+              <label for="order">Ordenar por:</label>
+              <select
+                class="selectpicker"
+                multiple
+                data-selected-text-format="values"
+                title="Perfil"
+                id="order"
+              >
+                <option>Opção 1</option>
+                <option>Opção 2</option>
+                <option>Opção 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="listinpage-itens properties">
+          <div
+            class="box-properties no-padding align-items-center justify-content-center"
+          >
+            <div class="properties-image gallery-slide">
+              <div class="gallery-item">
+                <img
+                  src="assets/img/gallery/gallery-item.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="properties-chip">Em construção</div>
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="assets/img/gallery/gallery-item.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="properties-chip">Em construção</div>
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="assets/img/gallery/gallery-item.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="properties-chip">Em construção</div>
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="assets/img/gallery/gallery-item.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="properties-chip">Em construção</div>
+              </div>
+            </div>
+            <div class="properties-descriptions">
+              <div class="properties-top">
+                <div class="title">Rio Branco</div>
+                <div class="type">Casa</div>
+                <div class="fav">
+                  <i class="heart fa fa-heart-o"></i>
+                </div>
+              </div>
+              <div class="properties-bottom">
+                <div class="price">R$1.560.000,00</div>
+                <div class="type">Cód. CL4995</div>
+              </div>
+              <div class="properties-desk">
+                <h4>Charme Vintage</h4>
+                <p>
+                  Em um dos melhores pontos do bairro. Muito espaçosa e em ótimo
+                  estado de conservação!
+                </p>
+              </div>
+              <div class="row properties-box">
+                <div class="col-md-4 properties-item car">
+                  <div class="image car-img">
+                    <img src="assets/img/icons/car.png" alt="" />
+                  </div>
+                  <div class="value car-value">2 vagas</div>
+                </div>
+                <div class="col-md-4 properties-item size">
+                  <div class="image size-img">
+                    <img src="assets/img/icons/size.png" alt="" />
+                  </div>
+                  <div class="value size-value">79m²</div>
+                </div>
+                <div class="col-md-4 properties-item rooms">
+                  <div class="image rooms-img">
+                    <img src="assets/img/icons/rooms.png" alt="" />
+                  </div>
+                  <div class="value rooms-value">2 Dorm. 1 suíte</div>
+                </div>
+              </div>
+              <div class="properties-button">
+                <a href="#" class="btn btn--inverse">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="31"
+                    height="29"
+                    viewBox="0 0 31 29"
+                    fill="none"
+                  >
+                    <path
+                      d="M27.8565 29H20.2666C19.5956 29 18.9521 28.7521 18.4776 28.3108C18.0032 27.8695 17.7366 27.2711 17.7366 26.647V19.588H12.6767V26.647C12.6767 27.2711 12.4101 27.8695 11.9357 28.3108C11.4612 28.7521 10.8177 29 10.1467 29H2.55682C1.88583 29 1.24233 28.7521 0.767866 28.3108C0.293405 27.8695 0.0268555 27.2711 0.0268555 26.647V13.0437C0.026967 12.7172 0.100128 12.3943 0.241685 12.0956C0.383241 11.7968 0.590097 11.5287 0.849095 11.3084L13.4989 0.616915C13.9653 0.22008 14.5745 0 15.2067 0C15.8388 0 16.448 0.22008 16.9144 0.616915L29.5642 11.3084C29.8232 11.5287 30.0301 11.7968 30.1716 12.0956C30.3132 12.3943 30.3864 12.7172 30.3865 13.0437V26.647C30.3865 27.2711 30.1199 27.8695 29.6455 28.3108C29.171 28.7521 28.5275 29 27.8565 29ZM12.6767 17.235H17.7366C18.4076 17.235 19.0511 17.4829 19.5256 17.9242C20.0001 18.3654 20.2666 18.9639 20.2666 19.588V26.647H27.8565V13.0437L15.2067 2.35225L2.55682 13.0437V26.647H10.1467V19.588C10.1467 18.9639 10.4133 18.3654 10.8877 17.9242C11.3622 17.4829 12.0057 17.235 12.6767 17.235Z"
+                      fill="#842029"
+                    /></svg
+                  >Quero visitar este imóvel</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main-footer></main-footer>
+
+    <div id="preloader">
+      <div class="preloader">
+        <div class="waviy">
+          <span style="--i: 1">C</span>
+          <span style="--i: 2">O</span>
+          <span style="--i: 3">L</span>
+          <span style="--i: 4">N</span>
+          <span style="--i: 5">A</span>
+          <span style="--i: 6">G</span>
+          <span style="--i: 7">H</span>
+          <span style="--i: 8">I</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="hf.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/bootstrap-select.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
