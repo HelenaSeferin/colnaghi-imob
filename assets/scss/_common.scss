@@ -51,10 +51,13 @@ a:hover {
 
 #internal {
   padding: 85px 0;
-  height: 100vh;
+  // height: 100vh;
 
   @media (max-width: 1024px) {
     padding: 30px;
+  }
+  @media (max-width: 1024px) {
+    padding: 50px 10px;
   }
 }
 
@@ -70,7 +73,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 9999;
+  z-index: 9999999;
   overflow: hidden;
   background: #494949;
   .preloader {

@@ -198,6 +198,9 @@ form {
     flex-direction: column;
     justify-content: space-between;
   }
+  @media (max-width: 991px) {
+    padding-bottom: 0;
+  }
 
   .filters-box {
     padding: 50px 50px 0;
@@ -261,6 +264,11 @@ form {
     }
   }
 
+  .form-input-small {
+    @media (max-width: 768px) {
+      width: 200px !important;
+    }
+  }
   .filters-form {
     display: flex;
     flex-direction: column;
@@ -271,6 +279,10 @@ form {
 
       label {
         font-weight: 300;
+
+        @media (max-width: 767px) {
+          font-size: 15px !important;
+        }
       }
     }
 
@@ -303,7 +315,7 @@ form {
       border: 2px solid $base-4;
 
       @media (max-width: 450px) {
-        width: 118px;
+        width: 134px;
 
         .filter-option {
           padding: 5px 1px;
@@ -368,10 +380,10 @@ form {
       outline: none;
       @media (max-width: 1450px) {
         height: 53px;
-        width: 218px;
+        width: 239px;
       }
       @media (max-width: 450px) {
-        width: 118px;
+        width: 134px;
         font-size: 14px;
       }
     }
@@ -445,6 +457,9 @@ form {
         right: 30%;
         bottom: 0px;
       }
+      @media (max-width: 768px) {
+        right: 11%;
+      }
     }
   }
 }
@@ -473,6 +488,9 @@ input[type="checkbox"] + label {
     border: 1px solid #fff;
     background-color: #842029;
     border-radius: 15px;
+    @media (max-width: 767px) {
+      top: -2px;
+    }
   }
 }
 

@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 99999;
   padding: 27px 0;
   background: $background-2;
 
@@ -108,9 +108,13 @@
       display: block;
       width: 145px;
       text-align: center;
+      &:hover {
+        background-color: $primary-1;
+        color: $background-2;
+      }
 
       &:focus:hover {
-        color: #fff;
+        color: $background-2;
         background: $primary-1;
       }
       @media (max-width: 1450px) {
