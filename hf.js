@@ -29,23 +29,24 @@ class Header extends HTMLElement {
                   </li>
                 </ul>
               </li>
+			  </li>
+              <li>
+                <a class="nav-link" href="#">Lançamentos</a>
+              </li>
+			  <li>
+			  	<a class="nav-link" href="#">Comerciais</a>
+			  </li>
               <li>
                 <a class="nav-link" href="#">Anuncie seu imóvel</a>
               </li>
               <li>
                 <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Lançamentos</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Tour Virtual</a></l
-              i>			
+             </li>			
               <li>
                 <a class="nav-link" href="#">Meus Favoritos</a>
               </li>
               <li>
-                <a class="getstarted" href="#">Login</a>
+                <a class="getstarted" href="#">Entrar</a>
               </li>
             </ul>
                   

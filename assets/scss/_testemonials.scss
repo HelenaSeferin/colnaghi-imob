@@ -42,13 +42,14 @@
           color: $base-1;
         }
         small {
-          font-weight: 400;
+          display: block;
+          font-weight: 300;
           font-size: 20px;
-
           color: $base-3;
+          margin-bottom: 15px;
         }
         p {
-          font-weight: 400;
+          font-weight: 300;
           font-size: 20px;
           line-height: 25px;
           color: $base-2;

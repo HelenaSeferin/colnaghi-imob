@@ -1,16 +1,20 @@
 form {
   display: flex;
+
   .form-input {
     border: 1px solid #888888;
     border-radius: 15px;
     color: $black;
     padding: 16px 30px;
-    font-size: 24px;
+    height: 60px;
+    font-size: 20px;
+
     @media (max-width: 1450px) {
       padding: 13px 21px;
       font-size: 17px;
     }
   }
+
   .form-btn {
     color: $background-2;
     background: $primary-4;
@@ -54,45 +58,41 @@ form {
   .search-form {
     display: flex;
     flex-direction: column;
+
     @media (max-width: 1024px) {
       margin-bottom: 20px;
     }
 
     label {
       font-weight: 700;
-      font-size: 24px;
+      font-size: 15px;
       color: $background-2;
       text-align: left;
       margin-bottom: 10px;
-      @media (max-width: 1450px) {
-        font-size: 21px;
-      }
-      @media (max-width: 1024px) {
-        font-size: 19px;
-      }
     }
 
     .bootstrap-select {
-      height: 58px;
-      @media (max-width: 1450px) {
-        height: 53px;
+      height: 46px;
+
+      .filter-option {
+        display: flex;
+        align-items: center;
       }
     }
+
     .btn {
       background: rgba(196, 196, 196, 0.5);
       border: 2px solid $background-2;
       font-weight: 400;
       font-size: 20px;
       color: $background-2;
-      height: 58px;
-      padding: 7px;
-      @media (max-width: 1450px) {
-        height: 53px;
-        padding: 5px;
-      }
+      height: 47px;
+      padding: 5px 7px;
 
       .filter-option-inner-inner {
         color: $background-2;
+        font-size: 15px;
+        font-weight: 300;
       }
     }
 
@@ -105,6 +105,7 @@ form {
         height: 20px;
         padding: 0px 6px;
         background: $primary-2;
+        z-index: 2;
 
         &::after {
           border-width: 0 0.16em 0.16em 0 !important;
@@ -112,10 +113,26 @@ form {
           font-weight: 300 !important;
         }
       }
+
       .text {
         margin-left: 30px;
+
+        &::before {
+          border: 3px solid $base-4;
+          background-color: transparent;
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 5px;
+          left: 18px;
+          border-radius: 12px;
+          z-index: 1;
+        }
       }
     }
+
     .bootstrap-select > .dropdown-toggle:after {
       padding: 7px;
       box-shadow: 2px -2px 0 1px #fff inset;
@@ -129,18 +146,16 @@ form {
       background: rgba(196, 196, 196, 0.5);
       border: 2px solid #ffffff;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 15px;
       color: #ffffff;
-      height: 58px;
+      height: 47px;
       width: 230px;
       padding: 7px 14px;
       border-radius: 15px;
       outline: none;
-      @media (max-width: 1450px) {
-        height: 53px;
-        width: 218px;
-      }
+      margin-bottom: 8px;
     }
+
     ::placeholder {
       color: $background-2;
       opacity: 1;
@@ -154,23 +169,33 @@ form {
       /* Microsoft Edge */
       color: $background-2;
     }
+
     .btn-search {
+      display: flex;
+      align-items: center;
       color: $background-2;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 15px;
       background: $primary-4;
-      padding: 16px 28px;
+      padding: 13px 22px;
       border: none;
       border-radius: 100px;
-      margin: 41px 0 0;
+      margin: 22px 0 0;
       transition: 0.3s ease-in;
+
       &:hover {
         background: $primary-1;
         color: $background-2;
       }
+
       i {
-        margin-left: 80px;
+        margin-left: 20px;
+
+        &::before {
+          font-size: 29px;
+        }
       }
+
       @media (max-width: 1499px) {
         padding: 11px 7px 12px 15px;
 
@@ -179,6 +204,7 @@ form {
           margin-right: 20px;
         }
       }
+
       @media (max-width: 1024px) {
         font-size: 19px;
       }
@@ -198,12 +224,14 @@ form {
     flex-direction: column;
     justify-content: space-between;
   }
+
   @media (max-width: 991px) {
     padding-bottom: 0;
   }
 
   .filters-box {
     padding: 50px 50px 0;
+
     @media (max-width: 450px) {
       padding: 25px 20px 0;
     }
@@ -220,6 +248,7 @@ form {
 
     .filters-bottom {
       padding: 20px 0;
+
       .filters-form {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -230,8 +259,16 @@ form {
         &:nth-child(2) {
           justify-items: inherit;
           align-items: center;
+
           @media (max-width: 991px) {
             justify-items: start;
+          }
+        }
+
+        .center {
+          margin-left: 28%;
+          @media (max-width: 991px) {
+            margin-left: 0;
           }
         }
 
@@ -246,12 +283,13 @@ form {
           margin-right: 20px;
           padding: 16px 0;
           font-weight: 300;
-          font-size: 20px;
+          font-size: 15px;
           color: $base-3;
         }
 
         .btn-filters {
-          width: 240px;
+          width: 184px;
+
           @media (max-width: 991px) {
             width: 80%;
             border: 1px solid #b02a37;
@@ -269,11 +307,17 @@ form {
       width: 200px !important;
     }
   }
+
   .filters-form {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
     position: relative;
+
+    .form-center {
+      width: 60%;
+    }
+
     .checkbox {
       padding: 16px;
 
@@ -283,42 +327,57 @@ form {
         @media (max-width: 767px) {
           font-size: 15px !important;
         }
+
+        &::before {
+          border: 4px solid $base-4;
+          background-color: transparent;
+        }
+
+        &::after {
+          color: $background-2;
+          background-color: $primary-2;
+          border: none;
+          border-radius: 0px;
+          left: 0;
+          top: 0;
+          width: 21px;
+          height: 21px;
+          border: none;
+          border-radius: 14px;
+          padding: 2px;
+        }
       }
     }
 
     label {
       font-weight: 700;
-      font-size: 15px;
+      font-size: 15px !important;
       color: $base-3;
       text-align: left;
-      margin-bottom: 8px;
-
-      @media (max-width: 1024px) {
-        font-size: 16px;
-      }
+      margin-bottom: 5px;
     }
 
     .bootstrap-select {
-      height: 53px;
       width: 100% !important;
     }
 
     .btn {
       background: $background-2;
       border: 2px solid $background-2;
-      font-weight: 400;
-      font-size: 20px;
+      font-weight: 300;
+      font-size: 15px;
       color: $background-2;
-      height: 53px;
+      height: 43px;
       max-width: 279px;
       padding: 5px 9px;
       border: 2px solid $base-4;
-
+      box-shadow: none;
+      outline: none !important;
       @media (max-width: 450px) {
         width: 134px;
 
         .filter-option {
-          padding: 5px 1px;
+          padding: 0 1px;
         }
       }
 
@@ -336,9 +395,11 @@ form {
     .dropdown-menu.show {
       border-radius: 7px;
       border: 2px solid $base-4;
+
       &:nth-child(1) {
         border: none;
       }
+
       .bs-ok-default {
         left: 18px !important;
         right: 0 !important;
@@ -347,6 +408,7 @@ form {
         height: 20px;
         padding: 0px 6px;
         background: $primary-2;
+        z-index: 2;
 
         &::after {
           border-width: 0 0.16em 0.16em 0 !important;
@@ -354,10 +416,26 @@ form {
           font-weight: 300 !important;
         }
       }
+
       .text {
         margin-left: 30px;
+
+        &::before {
+          border: 3px solid $base-4;
+          background-color: transparent;
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 5px;
+          left: 18px;
+          border-radius: 12px;
+          z-index: 1;
+        }
       }
     }
+
     .bootstrap-select > .dropdown-toggle:after {
       padding: 7px;
       box-shadow: 2px -2px 0 1px $base-4 inset;
@@ -371,22 +449,20 @@ form {
       background: #fff;
       border: 2px solid $base-4;
       font-weight: 300;
-      font-size: 20px;
+      font-size: 15px;
       color: $base-4;
-      height: 53px;
+      height: 43px;
       width: 100%;
       padding: 7px 14px;
       border-radius: 15px;
       outline: none;
-      @media (max-width: 1450px) {
-        height: 53px;
-        width: 239px;
-      }
+
       @media (max-width: 450px) {
         width: 134px;
         font-size: 14px;
       }
     }
+
     ::placeholder {
       color: $base-2;
       // opacity: 1;
@@ -400,22 +476,26 @@ form {
       /* Microsoft Edge */
       color: $base-2;
     }
+
     .btn-filters {
       color: $background-2;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 15px;
       background: $primary-4;
       padding: 16px 48px;
       border: none;
       border-radius: 15px;
       transition: 0.3s ease-in;
+
       &:hover {
         background: $primary-1;
         color: $background-2;
       }
+
       i {
         margin-left: 80px;
       }
+
       @media (max-width: 1499px) {
         padding: 11px 7px 12px 15px;
 
@@ -424,6 +504,7 @@ form {
           margin-right: 20px;
         }
       }
+
       @media (max-width: 1024px) {
         font-size: 19px;
       }
@@ -445,18 +526,22 @@ form {
         background: $primary-1;
         color: $background-2;
       }
+
       i {
         font-size: 19px;
       }
+
       @media (max-width: 1499px) {
         padding: 11px 7px 11px 8px;
       }
+
       @media (max-width: 1024px) {
         font-size: 19px;
         position: absolute;
         right: 30%;
         bottom: 0px;
       }
+
       @media (max-width: 768px) {
         right: 11%;
       }
@@ -479,8 +564,8 @@ input[type="checkbox"] + label {
   &:before {
     content: "";
     display: block;
-    width: 28px;
-    height: 28px;
+    width: 21px;
+    height: 21px;
     margin-right: 14px;
     position: absolute;
     top: 0;
@@ -488,6 +573,7 @@ input[type="checkbox"] + label {
     border: 1px solid #fff;
     background-color: #842029;
     border-radius: 15px;
+
     @media (max-width: 767px) {
       top: -2px;
     }
@@ -500,7 +586,7 @@ input[type="checkbox"] {
 
   &:checked + label:after {
     content: "✔";
-    font-size: 25px;
+    font-size: 20px;
     line-height: 20px;
     color: #fff;
     display: block;
@@ -516,6 +602,7 @@ input[type="checkbox"] {
 .dp-desk {
   padding: 0;
   display: block;
+
   @media (min-width: 991px) {
     display: none !important;
   }
@@ -536,6 +623,7 @@ input[type="checkbox"] {
 
 .filter-mob {
   display: block;
+
   @media (max-width: 991px) {
     display: none !important;
   }

@@ -2,14 +2,11 @@
   @media (max-width: 1024px) {
     padding: 50px 0 10px;
   }
-  .section-paragraph {
-    color: $black;
-  }
 
   small {
     display: block;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 15px;
     color: #6a6a6a;
     margin-top: 20px;
 
@@ -49,7 +46,7 @@
 
     &::-webkit-scrollbar-track {
       background: #a6a6a6;
-      border: 5px solid #fff;
+      border: 4px solid #fff;
       margin-left: 130px;
       margin-right: 130px;
       border-radius: 10px;
