@@ -325,7 +325,25 @@
         $('.district-item').removeClass('district-slide');
     }
     }).resize();
+
+
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 3,
+      slideToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
+    });
   })
  
+  
 
 })()

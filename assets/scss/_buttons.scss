@@ -29,3 +29,20 @@
     }
   }
 }
+
+.btn-grey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0;
+  margin: 0 auto;
+  width: 250px;
+  min-width: 250px;
+  background: $base-3;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  color: $background-2;
+  border-radius: 15px;
+  border: none;
+}
