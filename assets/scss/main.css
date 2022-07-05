@@ -703,6 +703,106 @@
   }
 }
 
+.gallery-product .container {
+  position: relative;
+}
+
+.gallery-product .slider-nav {
+  height: 140px;
+  margin: 15px 0;
+}
+
+.gallery-product .slick-slider {
+  position: initial;
+  cursor: pointer;
+}
+
+.gallery-product .slick-slider .slick-arrow {
+  position: absolute;
+  top: 44%;
+}
+
+.gallery-product .slick-slider .slick-prev {
+  left: -40px;
+}
+
+.gallery-product .slick-slider .slick-next {
+  right: -13px;
+}
+
+.gallery-product .slick-prev:before {
+  border: solid #b3b3b3;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.gallery-product .slick-next:before {
+  border: solid #b3b3b3;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.gallery-product .slider-for .slick-track {
+  max-height: 510px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery-product .slider-nav .slick-track {
+  max-height: 140px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery-product .slider-nav .slick-track img {
+  height: 140px;
+}
+
+@media (max-width: 991px) {
+  .gallery-product .slider-nav .slick-track {
+    max-height: 120px;
+  }
+  .gallery-product .slider-nav .slick-track img {
+    height: 120px;
+  }
+}
+
+.gallery-product .slider-nav .slick-current img {
+  margin: 0 auto;
+  border-radius: 32px;
+  border: 7px solid #ff6767;
+}
+
 body {
   font-family: "Lexend", sans-serif;
   color: #ddd;
