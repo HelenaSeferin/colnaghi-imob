@@ -143,6 +143,10 @@
     position: relative;
   }
 
+  .slick-slide img {
+    display: inline-block;
+  }
+
   .slider-nav {
     height: 140px;
     margin: 15px 0;

@@ -707,6 +707,10 @@
   position: relative;
 }
 
+.gallery-product .slick-slide img {
+  display: inline-block;
+}
+
 .gallery-product .slider-nav {
   height: 140px;
   margin: 15px 0;
@@ -3007,6 +3011,22 @@ input[type="checkbox"]:checked + label:after {
   border-radius: 73px;
 }
 
+.product .product-box .product-head {
+  padding: 50px 60px;
+}
+
+.product .product-box span {
+  font-weight: 300;
+  font-size: 15px;
+  color: #747474;
+}
+
+.product .product-box .product-value {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 15px 0 30px;
+}
+
 .product .product-box .title {
   color: #000;
   text-align: center;
@@ -3021,6 +3041,54 @@ input[type="checkbox"]:checked + label:after {
   font-weight: 300;
   font-size: 15px;
   line-height: 19px;
+  margin-bottom: 40px;
+}
+
+.product .product-box .product-header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.product .product-box .product-header .product-header-box {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.product .product-box .call-to-specialist {
+  margin: 20px auto;
+}
+
+.product .product-box .product-specialist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0px 0;
+  gap: 15px;
+}
+
+.product .product-box .product-specialist .name {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.product .product-box .product-specialist .info-box .desc {
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffd336;
+  background: #222222;
+  padding: 5px 18px;
+}
+
+.product .product-box .product-specialist .code-creci {
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 .product .product-padd {
