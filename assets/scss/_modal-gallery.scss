@@ -1,0 +1,59 @@
+.modal {
+  z-index: 999999;
+
+  .gallery-full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+
+    .button-close {
+      width: 100px;
+      position: absolute;
+      right: 125px;
+      top: 125px;
+      z-index: 9999;
+      background: $primary-2;
+      border-radius: 25px;
+      border: 0;
+      color: $background-2;
+      padding: 10px 0px;
+    }
+
+    .modal-content {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0px !important;
+      background-color: $black;
+
+      .gallery-product {
+        .container {
+          .button-tour {
+            font-size: 15px;
+            position: absolute;
+            top: 40px;
+            left: 200px;
+            z-index: 1;
+            background: $black;
+            border: 3px solid $base-3;
+            color: $background-2;
+            padding: 10px 40px;
+          }
+        }
+      }
+    }
+
+    .modal-body {
+      section {
+        padding: 200px 0;
+      }
+    }
+  }
+}
+
+#modal-form {
+  .step-two,
+  .step-success {
+    display: none;
+  }
+}

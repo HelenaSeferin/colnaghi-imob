@@ -58,6 +58,7 @@
     <!-- Template Main CSS File -->
     <link href="assets/scss/main.css" rel="stylesheet" />
   </head>
+
   <body id="pages">
     <main-header></main-header>
 
@@ -65,98 +66,98 @@
       <section class="gallery-product">
         <div class="container">
           <div class="slider-for">
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div>
+            <div data-toggle="modal" data-target="#gallery-product">
               <img
                 src="assets/img/gallery/gallery-product.png"
                 class="img-fluid"
@@ -267,6 +268,29 @@
         </div>
       </section>
 
+      <section class="maps-hide map-localization">
+        <div class="map-select">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.5579407215473!2d-51.19390763364565!3d-30.020847206611116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95 1979cfabcccc9f%3A0x8eefbc5029137363!2sR.%20C%C3%A2ndido%20Silveira%2C%20141-199%20-%20Auxiliadora%2C%20Porto%20Alegre%20-%20RS%2C%2090540-010!5e0!3m2!1spt-BR!2sbr!4v1654258780528!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="552"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <div
+            class="map-btn btn"
+            data-toggle="modal"
+            data-target="#modal-form"
+          >
+            <img src="/assets/img/icons/hide.png" alt="" /> Desbloquei a
+            localização
+          </div>
+        </div>
+      </section>
+
       <section class="product">
         <div class="container">
           <div class="row">
@@ -281,7 +305,11 @@
                 <div class="product-header-item maps">
                   <img src="/assets/img/icons/maps.png" alt="" /> Mapa
                 </div>
-                <div class="product-header-item contact">
+                <div
+                  class="product-header-item contact"
+                  data-toggle="modal"
+                  data-target="#modal-form"
+                >
                   <img src="/assets/img/icons/home.png" alt="" /> Quero Visitar
                   o Imóvel
                 </div>
@@ -424,8 +452,43 @@
         </div>
       </section>
 
+      <section class="map-localization">
+        <div class="container">
+          <div class="section-title">
+            <h2>Localização</h2>
+          </div>
+          <p class="section-paragraph">
+            <img src="/assets/img/icons/local.png" alt="" />
+            Apartamento - Bairro Rio Branco, Porto Alegre
+          </p>
+          <div class="map-select">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.5579407215473!2d-51.19390763364565!3d-30.020847206611116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95 1979cfabcccc9f%3A0x8eefbc5029137363!2sR.%20C%C3%A2ndido%20Silveira%2C%20141-199%20-%20Auxiliadora%2C%20Porto%20Alegre%20-%20RS%2C%2090540-010!5e0!3m2!1spt-BR!2sbr!4v1654258780528!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="552"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div
+              class="map-btn btn"
+              data-toggle="modal"
+              data-target="#modal-form"
+            >
+              <img src="/assets/img/icons/hide.png" alt="" /> Desbloquei a
+              localização
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="properties" class="properties">
         <div class="">
+          <div class="map-btn-underline btn">
+            <span>Clique e escolha a região que você quer morar</span>
+          </div>
           <div class="section-title">
             <h2>Imóveis recomendados</h2>
           </div>
@@ -487,6 +550,242 @@
 
           <div class="container-full">
             <small>Arraste aqui para ver mais opções</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="modais">
+        <div class="modal" id="gallery-product">
+          <div class="modal-dialog gallery-full">
+            <div class="modal-content">
+              <button class="button-close" type="button" data-dismiss="modal">
+                Fechar
+              </button>
+              <div class="modal-body">
+                <section class="gallery-product">
+                  <div class="container">
+                    <button class="button-tour" type="button">
+                      Tour virtual
+                    </button>
+                    <div class="slider-for">
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="assets/img/gallery/gallery-product.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modal-form">
+          <div class="modal-dialog steps-contact">
+            <div class="modal-content step-one">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <div>
+                  <h4 class="modal-title">
+                    Prefiro visitar o imóvel no dia da semana e período:
+                  </h4>
+
+                  <p>Você pode escolher mais de uma opção.</p>
+                </div>
+
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <h3>Dia da Semana</h3>
+                <div class="step-week-content">
+                  <ul>
+                    <li class="step-week">Seg</li>
+                    <li class="step-week">Ter</li>
+                    <li class="step-week">Qua</li>
+                    <li class="step-week">Qui</li>
+                  </ul>
+                  <ul>
+                    <li class="step-week">Sex</li>
+                    <li class="step-week">Sab</li>
+                    <li class="step-week">Dom</li>
+                  </ul>
+                </div>
+
+                <h3>Período</h3>
+                <div class="step-when-content">
+                  <ul>
+                    <li class="step-when">Manhã</li>
+                    <li class="step-when">Tarde</li>
+                    <li class="step-when">Noite</li>
+                  </ul>
+                </div>
+
+                <button class="next btn">Continuar</button>
+              </div>
+            </div>
+
+            <div class="modal-content step-two">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <div>
+                  <h4 class="modal-title">
+                    Preencha seus dados para retorno sobre a visita
+                  </h4>
+
+                  <p>Entraremos em contato com você.</p>
+                </div>
+
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <form action="" class="form-contact">
+                  <div class="form-half">
+                    <input type="text" placeholder="Nome" class="form-input" />
+                    <input
+                      type="text"
+                      placeholder="Telefone"
+                      class="form-input"
+                    />
+                  </div>
+                  <input type="text" placeholder="email" class="form-input" />
+
+                  <input type="checkbox" id="phone-form" name="phone" />
+                  <label for="phone-form">Telefone</label>
+
+                  <input type="checkbox" id="email-form" name="email" />
+                  <label for="email-form">Email</label>
+
+                  <input type="checkbox" id="whatsapp" name="whatsapp" />
+                  <label for="whatsapp">Whatsapp</label>
+
+                  <input type="checkbox" id="video" name="video" checked />
+                  <label for="video">Vídeo-chamadas</label>
+                </form>
+
+                <button class="form-send btn">Solicitar Visita</button>
+              </div>
+            </div>
+
+            <div class="modal-content step-success">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <div>
+                  <h4 class="modal-title">Recebemos sua solicitação</h4>
+
+                  <p>Entraremos em contato em breve!</p>
+                </div>
+              </div>
+              <div class="modal-body">
+                <button
+                  type="button"
+                  class="close btn btn--inverse"
+                  data-dismiss="modal"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

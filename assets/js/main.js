@@ -255,6 +255,28 @@
   });
 
 
+  $( "#modal-form .next" ).click(function() {
+    $( "#modal-form .step-one" ).hide();
+    $( "#modal-form .step-two" ).show();
+  });
+
+  $( "#modal-form .form-send" ).click(function() {
+    $( "#modal-form .step-two" ).hide();
+    $( "#modal-form .step-success" ).show();
+  });
+
+  $( ".product-header-item.maps" ).click(function() {
+    $( ".gallery-product" ).hide();
+    $( ".maps-hide " ).show();
+  });
+
+
+  $( ".product-header-item.photos" ).click(function() {
+    $( ".maps-hide " ).hide();
+    $( ".gallery-product" ).show();
+   
+  });
+
   // $('.gallery-slide').slick({
   //   slidesToShow: 1, 
   //   variableWidth: true,

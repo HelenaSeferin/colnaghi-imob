@@ -2586,6 +2586,208 @@ input[type="checkbox"]:checked + label:after {
   background-color: #ffffff;
 }
 
+.map-localization {
+  background: #f2f2f2;
+}
+
+.map-localization .map-select {
+  position: relative;
+}
+
+.map-localization .map-select iframe {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
+.map-localization .map-select .map-btn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.maps-hide {
+  display: none;
+}
+
+.modal .modal-dialog {
+  top: 30%;
+}
+
+.modal .modal-dialog .modal-content {
+  border-radius: 50px;
+}
+
+.modal .modal-dialog .modal-content .close {
+  border: 2px solid #b02a37;
+  border-radius: 50%;
+  padding: 0px 9px 2px;
+  background: none;
+  font-size: 18px;
+  color: #b02a37;
+}
+
+#modal-form .modal-header {
+  padding: 30px 0;
+}
+
+#modal-form .modal-content {
+  padding: 30px 40px 30px 50px;
+}
+
+#modal-form .modal-header {
+  padding: 0;
+  border-bottom: 1px solid #000000;
+}
+
+#modal-form .modal-title {
+  font-weight: 400;
+  font-size: 17px;
+  color: #000000;
+}
+
+#modal-form p {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  color: #000000;
+}
+
+#modal-form .modal-body {
+  padding: 30px 0;
+}
+
+#modal-form .modal-body h3 {
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+
+#modal-form .modal-body .step-week-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#modal-form .modal-body .step-when-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#modal-form .modal-body ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#modal-form .modal-body ul li {
+  font-weight: 700;
+  font-size: 15px;
+  color: #dc3545;
+  padding: 5px 12px;
+  margin-right: 2px;
+  border: 3px solid #dc3545;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#modal-form .modal-body .btn {
+  padding: 10px 44px;
+  font-size: 15px;
+  margin: 30px auto 0;
+  display: block;
+}
+
+#modal-form .modal-body .form-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#modal-form .modal-body .form-contact .form-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+#modal-form .modal-body .form-contact input {
+  width: 100%;
+  border: 1px solid #888888;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  height: 45px;
+  font-size: 12px;
+  padding: 16px 20px;
+}
+
+#modal-form .modal-body .form-contact label {
+  margin-top: 10px;
+  font-size: 12px !important;
+}
+
+.modal {
+  z-index: 999999;
+}
+
+.modal .gallery-full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.modal .gallery-full .button-close {
+  width: 100px;
+  position: absolute;
+  right: 125px;
+  top: 125px;
+  z-index: 9999;
+  background: #842029;
+  border-radius: 25px;
+  border: 0;
+  color: #ffffff;
+  padding: 10px 0px;
+}
+
+.modal .gallery-full .modal-content {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0px !important;
+  background-color: #000;
+}
+
+.modal .gallery-full .modal-content .gallery-product .container .button-tour {
+  font-size: 15px;
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  z-index: 1;
+  background: #000;
+  border: 3px solid #888888;
+  color: #ffffff;
+  padding: 10px 40px;
+}
+
+.modal .gallery-full .modal-body section {
+  padding: 200px 0;
+}
+
+#modal-form .step-two,
+#modal-form .step-success {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .newsletter {
     padding: 10px 20px 30px;
@@ -3371,6 +3573,26 @@ input[type="checkbox"]:checked + label:after {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   color: #ffffff;
+}
+
+.properties .map-btn-underline {
+  margin: 70px auto;
+  display: block;
+  width: 510px;
+}
+
+.properties .map-btn-underline span {
+  position: relative;
+}
+
+.properties .map-btn-underline span::after {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
 }
 
 section {
