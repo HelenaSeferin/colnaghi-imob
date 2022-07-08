@@ -214,14 +214,14 @@
       align-items: center;
 
       img {
-        height: 140px;
+        height: 120px;
       }
 
       @media (max-width: 991px) {
         max-height: 120px;
 
         img {
-          height: 120px;
+          height: 115px;
         }
       }
     }
@@ -232,4 +232,9 @@
       border: 7px solid #ff6767;
     }
   }
+}
+
+.modal .slick-prev:before,
+.modal .slick-next:before {
+  color: #000;
 }

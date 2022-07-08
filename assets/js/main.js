@@ -240,6 +240,19 @@
     $(this).toggleClass("fa-heart fa-heart-o");
   });
 
+
+    /**
+   * FORM ATIVAR OPÇÃO DE VISITA
+   */
+
+  $(".step-week-content .step-week").click(function() {
+    $(this).toggleClass("active");
+  });
+
+  $(".step-when-content .step-when").click(function() {
+    $(this).toggleClass("active");
+  });
+
   /**
    * BOTÃO SUCESSO ENVIO NEWS
    */
@@ -277,12 +290,24 @@
    
   });
 
-  // $('.gallery-slide').slick({
-  //   slidesToShow: 1, 
-  //   variableWidth: true,
-  //   arrows: true,
-   
-  // }); 
+  $( ".block-local" ).click(function() {
+    $( "#modal-form .step-one" ).hide();
+    $( "#modal-form .step-two" ).show();
+  });
+
+
+  $(document).ready(function(){
+    $('.slider-modal').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      autoplay: true
+     
+    });
+  });
+
+  
   $('.gallery-slide').slick();
 
   $(document).ready(function() { 
@@ -377,6 +402,12 @@
           settings: {
             slidesToShow: 9
           }
+        },,
+        {
+          breakpoint: 1700,
+          settings: {
+            slidesToShow: 7
+          }
         },
         {
           breakpoint: 1620,
@@ -385,9 +416,9 @@
           }
         },
         {
-          breakpoint: 1400,
+          breakpoint: 1450,
           settings: {
-            slidesToShow: 6,
+            slidesToShow: 5,
             centerPadding: '40px',
             centerMode: true,
           }
@@ -424,6 +455,15 @@
           breakpoint: 767,
           settings: {
             slidesToShow: 3,
+            centerPadding: '5px',
+            centerMode: true,
+          }
+        },
+        
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
             centerPadding: '5px',
             centerMode: true,
           }

@@ -242,6 +242,11 @@
     margin: 70px auto;
     display: block;
     width: 510px;
+
+    @media (max-width: 767px) {
+      width: auto;
+      font-size: 12px;
+    }
     span {
       position: relative;
 
