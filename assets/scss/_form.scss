@@ -6,12 +6,11 @@ form {
     border-radius: 15px;
     color: $black;
     padding: 16px 30px;
-    height: 60px;
-    font-size: 20px;
+    height: 50px;
+    font-size: 15px;
 
     @media (max-width: 1450px) {
       padding: 13px 21px;
-      font-size: 15px;
     }
   }
 
@@ -69,7 +68,7 @@ form {
 
     label {
       font-weight: 700;
-      font-size: 15px;
+      font-size: 14px;
       color: $background-2;
       text-align: left;
       margin-bottom: 10px;
@@ -90,12 +89,12 @@ form {
       font-weight: 400;
       font-size: 20px;
       color: $background-2;
-      height: 47px;
+      height: 42px;
       padding: 5px 7px;
 
       .filter-option-inner-inner {
         color: $background-2;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 300;
       }
     }
@@ -138,7 +137,7 @@ form {
     }
 
     .bootstrap-select > .dropdown-toggle:after {
-      padding: 7px;
+      padding: 6px;
       box-shadow: 2px -2px 0 1px #fff inset;
       border: solid transparent;
       border-width: 0 0 2px 2px;
@@ -150,9 +149,9 @@ form {
       background: rgba(196, 196, 196, 0.5);
       border: 2px solid #ffffff;
       font-weight: 400;
-      font-size: 15px;
+      font-size: 13px;
       color: #ffffff;
-      height: 47px;
+      height: 42px;
       width: 230px;
       padding: 7px 14px;
       border-radius: 15px;
@@ -179,9 +178,9 @@ form {
       align-items: center;
       color: $background-2;
       font-weight: 700;
-      font-size: 15px;
+      font-size: 13px;
       background: $primary-4;
-      padding: 13px 22px;
+      padding: 9px 22px;
       border: none;
       border-radius: 100px;
       margin: 22px 0 0;
@@ -196,7 +195,7 @@ form {
         margin-left: 20px;
 
         &::before {
-          font-size: 29px;
+          font-size: 22px;
         }
       }
 
@@ -450,7 +449,7 @@ form {
     }
 
     .bootstrap-select > .dropdown-toggle:after {
-      padding: 7px;
+      padding: 6px;
       box-shadow: 2px -2px 0 1px $base-4 inset;
       border: solid transparent;
       border-width: 0 0 2px 2px;

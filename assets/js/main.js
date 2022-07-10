@@ -217,7 +217,7 @@
     speed: 400,
     loop: true,
     slidesPerView: 3, 
-    centeredSlides: true,
+    // centeredSlides: true,
     autoplay: false,
     
     autoplay: {
@@ -296,6 +296,66 @@
   });
 
 
+ 
+
+
+  $(document).ready(function() { 
+    $(window).bind("resize", function () {
+      if ($(this).width() >= 767 &&  $(this).width() <= 1500) {
+       
+        $(window).on('scroll', function() {
+          let height = $(document).height() -$(this).height();
+          let scroll = $(this).scrollTop();
+          let percent = Math.round( scroll / height *100 );
+      
+          if( percent <= 20 ){
+            $('.product .product-box').removeClass('sticky').removeClass('bottom');
+          } else {
+            if( percent > 20 && percent < 50 ) {
+              $('.product .product-box').removeClass('bottom').addClass('sticky');      
+            } else {
+              $('.product .product-box').removeClass('sticky').addClass('bottom');  
+            }
+          }     
+        });          
+          
+      } else {
+        
+          $('.product .product-box').removeClass('bottom').removeClass('sticky');   
+        
+      }
+
+      if ($(this).width() >= 1501 ) {
+        $(window).on('scroll', function() {
+          let height = $(document).height() -$(this).height();
+          let scroll = $(this).scrollTop();
+          let percent = Math.round( scroll / height *100 );
+      
+          if( percent <= 20 ){
+            $('.product .product-box').removeClass('sticky').removeClass('bottom');
+          } else {
+            if( percent > 20 && percent < 56 ) {
+              $('.product .product-box').removeClass('bottom').addClass('sticky');      
+            } else {
+              $('.product .product-box').removeClass('sticky').addClass('bottom');  
+            }
+          }     
+      
+        });
+      }
+      
+        
+    }).resize();
+
+  })
+
+
+
+
+
+
+
+
   $(document).ready(function(){
     $('.slider-modal').slick({
       slidesToShow: 1,
@@ -306,7 +366,6 @@
      
     });
   });
-
   
   $('.gallery-slide').slick();
 
@@ -418,7 +477,7 @@
         {
           breakpoint: 1450,
           settings: {
-            slidesToShow: 5,
+            slidesToShow: 6,
             centerPadding: '40px',
             centerMode: true,
           }
@@ -472,6 +531,4 @@
     });
   })
  
-  
-
 })()

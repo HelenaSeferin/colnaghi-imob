@@ -308,7 +308,7 @@
       <section class="product">
         <div class="container">
           <div class="row">
-            <div class="col-lg-7 col-md-12 col-xs-12 prod-col">
+            <div class="col-lg-7 col-md-6 col-xs-12 prod-col">
               <div class="product-header">
                 <div class="product-header-item photos">
                   <img src="/assets/img/icons/photos.png" alt="" /> Fotos
@@ -329,15 +329,6 @@
                   <span class="hide-desk">Visitar Imóvel</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="product">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7 col-md-6 col-xs-12 prod-col">
               <div class="product-info">
                 <span>Imóveis de alto padrão</span> /
                 <span>Apartamento à venda em Porto Alegre</span> /
@@ -395,12 +386,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 col-md-6 col-xs-12">
+            <div class="col-lg-4 col-md-6 col-xs-12">
               <div class="product-box">
                 <div class="product-padd product-head">
                   <span>Valor à vista</span>
                   <h2 class="product-value">R$ 1.000.000</h2>
-                  <div class="product-header">
+                  <div class="product-header itens">
                     <div class="product-header-box">
                       <img src="/assets/img/icons/room.png" alt="" /> 4
                     </div>
@@ -412,24 +403,6 @@
                     </div>
                   </div>
                   <span class="product-code">CÓD. CL12964</span>
-                  <div class="call-to-specialist btn-grey">
-                    Falar com Especialista
-                  </div>
-                  <div class="product-specialist">
-                    <div class="image">
-                      <img src="/assets/img/specialist.png" alt="" />
-                    </div>
-                    <div class="info">
-                      <h3 class="name">André Kubaski</h3>
-                      <div class="info-box">
-                        <span class="desc">Corretor Master</span>
-                        <span class="star"
-                          ><img src="/assets/img/icons/star.png" alt="" />
-                        </span>
-                      </div>
-                      <h4 class="code-creci">CRECI 123456</h4>
-                    </div>
-                  </div>
                 </div>
                 <hr />
                 <div class="product-padd">
@@ -437,20 +410,18 @@
                   <p>Preencha o formulário abaixo.</p>
 
                   <form action="" class="product-info">
-                    <div class="form-input-half">
-                      <input
-                        type="text"
-                        placeholder="Nome"
-                        id="name"
-                        class="form-input"
-                      />
-                      <input
-                        type="text"
-                        placeholder="Telefone"
-                        id="phone"
-                        class="form-input"
-                      />
-                    </div>
+                    <input
+                      type="text"
+                      placeholder="Nome"
+                      id="name"
+                      class="form-input"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Telefone"
+                      id="phone"
+                      class="form-input"
+                    />
 
                     <input
                       type="text"
@@ -463,12 +434,61 @@
                       id="message"
                       placeholder="Digite sua mensagem..."
                       cols="30"
-                      rows="5"
+                      rows="3"
                     ></textarea>
                     <button class="btn-grey form-product-btn">
                       Enviar as Informações
                     </button>
                   </form>
+                </div>
+                <hr />
+                <div class="product-specialist">
+                  <div class="image">
+                    <img src="/assets/img/specialist.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <h3 class="name">André Kubaski</h3>
+                    <div class="info-box">
+                      <span class="desc">Especialista do Imóvel</span>
+                    </div>
+                    <h4 class="code-creci">CRECI 123456</h4>
+                  </div>
+                </div>
+                <div class="call-to-specialist btn-grey">
+                  Falar com Especialista
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-localization">
+          <div class="container">
+            <div class="col-lg-7 col-md-6 col-xs-12 prod-col">
+              <div class="div-title">
+                <h2>Localização</h2>
+              </div>
+              <p class="section-paragraph">
+                <img src="/assets/img/icons/local.png" alt="" />
+                Apartamento - Bairro Rio Branco, Porto Alegre
+              </p>
+              <div class="map-select">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.5579407215473!2d-51.19390763364565!3d-30.020847206611116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95 1979cfabcccc9f%3A0x8eefbc5029137363!2sR.%20C%C3%A2ndido%20Silveira%2C%20141-199%20-%20Auxiliadora%2C%20Porto%20Alegre%20-%20RS%2C%2090540-010!5e0!3m2!1spt-BR!2sbr!4v1654258780528!5m2!1spt-BR!2sbr"
+                  width="90%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+
+                <div
+                  class="map-btn btn block-local"
+                  data-toggle="modal"
+                  data-target="#modal-form"
+                >
+                  <img src="/assets/img/icons/hide.png" alt="" /> Desbloquei a
+                  localização
                 </div>
               </div>
             </div>
@@ -476,47 +496,8 @@
         </div>
       </section>
 
-      <section class="map-localization">
-        <div class="container">
-          <div class="section-title">
-            <h2>Localização</h2>
-          </div>
-          <p class="section-paragraph">
-            <img src="/assets/img/icons/local.png" alt="" />
-            Apartamento - Bairro Rio Branco, Porto Alegre
-          </p>
-          <div class="map-select">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.5579407215473!2d-51.19390763364565!3d-30.020847206611116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95 1979cfabcccc9f%3A0x8eefbc5029137363!2sR.%20C%C3%A2ndido%20Silveira%2C%20141-199%20-%20Auxiliadora%2C%20Porto%20Alegre%20-%20RS%2C%2090540-010!5e0!3m2!1spt-BR!2sbr!4v1654258780528!5m2!1spt-BR!2sbr"
-              width="100%"
-              height="552"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-
-            <div
-              class="map-btn btn block-local"
-              data-toggle="modal"
-              data-target="#modal-form"
-            >
-              <img src="/assets/img/icons/hide.png" alt="" /> Desbloquei a
-              localização
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="properties" class="properties">
         <div class="">
-          <div
-            class="map-btn-underline btn block-local"
-            data-toggle="modal"
-            data-target="#modal-form"
-          >
-            <span>Clique e escolha a região que você quer morar</span>
-          </div>
           <div class="section-title">
             <h2>Imóveis recomendados</h2>
           </div>
@@ -816,6 +797,14 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="to-top">
+        <a
+          href="#"
+          class="back-to-top btn btn--inverse d-flex align-items-center justify-content-center"
+          >Voltar ao topo</a
+        >
       </section>
     </main>
 

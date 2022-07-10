@@ -1,4 +1,7 @@
 .district {
+  .container-mob-full {
+    max-width: 55%;
+  }
   .section-paragraph {
     max-width: 84%;
     margin: 0 auto 55px;
@@ -10,7 +13,7 @@
     display: flex;
 
     @media (max-width: 1600px) {
-      max-width: 1000px;
+      max-width: 750px;
       margin: 0 auto;
     }
 
@@ -44,8 +47,8 @@
 
         .district-title {
           h3 {
-            font-weight: 500;
-            font-size: 26px;
+            font-weight: 300;
+            font-size: 17px;
             color: $background-2;
             text-align: center;
           }
@@ -54,6 +57,7 @@
           .btn-small {
             background: $background-2;
             border: 1px solid $base-3;
+            font-size: 12px;
             border-radius: 8px;
             color: $base-3;
             text-align: center;

@@ -59,6 +59,12 @@ a:hover {
   @media (max-width: 1024px) {
     padding: 70px 10px;
   }
+
+  .to-top {
+    display: block !important;
+    margin: 0 auto;
+    width: 300px;
+  }
 }
 
 .red {
