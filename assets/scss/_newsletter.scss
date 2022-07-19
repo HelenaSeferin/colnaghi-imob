@@ -5,21 +5,33 @@
     padding: 10px 20px 30px;
   }
   .newsletter-box {
-    padding: 30px 20%;
+    padding: 30px 12%;
+    max-width: 80%;
+    margin: 0 auto;
     @media (max-width: 1024px) {
       padding: 40px 35px;
     }
     .section-title {
       padding-bottom: 25px;
+      h2 {
+        font-size: 20px;
+      }
     }
     .section-paragraph-small {
       padding-bottom: 25px;
+      font-size: 15px;
     }
   }
 
   .form-news {
     display: flex;
     justify-content: center;
+
+    .btn-news {
+      font-size: 15px;
+      font-weight: 300;
+      padding: 11px 25px;
+    }
 
     @media (max-width: 1024px) {
       form {

@@ -1,9 +1,9 @@
 .banner {
   position: relative;
-  margin: 115px 0 0;
+  margin: 98px 0 0;
   padding: 0 !important;
   background-image: url(./../../assets/img/banner/banner.png);
-  height: 874px;
+  height: 775px;
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
@@ -28,11 +28,10 @@
 
     h1 {
       font-weight: 700;
-      font-size: 47px;
+      font-size: 25px;
       color: $background-2;
       margin-bottom: 60px;
       @media (max-width: 1024px) {
-        font-size: 24px;
         margin-bottom: 35px;
       }
     }

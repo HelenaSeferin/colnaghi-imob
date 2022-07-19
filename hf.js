@@ -29,23 +29,24 @@ class Header extends HTMLElement {
                   </li>
                 </ul>
               </li>
+			  </li>
+              <li>
+                <a class="nav-link" href="#">Lançamentos</a>
+              </li>
+			  <li>
+			  	<a class="nav-link" href="#">Comerciais</a>
+			  </li>
               <li>
                 <a class="nav-link" href="#">Anuncie seu imóvel</a>
               </li>
               <li>
                 <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Lançamentos</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Tour Virtual</a></l
-              i>			
+             </li>			
               <li>
                 <a class="nav-link" href="#">Meus Favoritos</a>
               </li>
               <li>
-                <a class="getstarted" href="#">Login</a>
+                <a class="getstarted" href="#">Entrar</a>
               </li>
             </ul>
                   
@@ -72,7 +73,7 @@ class Header extends HTMLElement {
 				<div class="container">
 					<div class="row">	
 						<div class="col-lg-4 col-md-6 text">
-							<p>Nós trabalhamos incansavelmente para oferecer uma experiência intensa e apaixonante na busca pelo novo <br>lar.  <br><br>
+							<p>Nós trabalhamos incansavelmente para oferecer uma experiência intensa e apaixonante na busca pelo novo lar.  <br><br>
 							<strong>Conheça o nosso jeito!</strong></p>
 						</div>	
 						<div class="col-lg-5 col-md-6 links">
@@ -128,33 +129,33 @@ class Header extends HTMLElement {
   customElements.define('main-header', Header);
   customElements.define('main-footer', Footer);
 
-  const slider = document.querySelector('.box-propierties-slide');
-	let isDown = false;
-	let startX;
-	let scrollLeft;
+//   const slider = document.querySelector('.box-propierties-slide');
+// 	let isDown = false;
+// 	let startX;
+// 	let scrollLeft;
 
-	slider.addEventListener('mousedown', e => {
-	isDown = true;
-	slider.classList.add('active');
-	startX = e.pageX - slider.offsetLeft;
-	scrollLeft = slider.scrollLeft;
-	});
-	slider.addEventListener('mouseleave', _ => {
-	isDown = false;
-	slider.classList.remove('active');
-	});
-	slider.addEventListener('mouseup', _ => {
-	isDown = false;
-	slider.classList.remove('active');
-	});
-	slider.addEventListener('mousemove', e => {
-	if (!isDown) return;
-	e.preventDefault();
-	const x = e.pageX - slider.offsetLeft;
-	const SCROLL_SPEED = 2;
-	const walk = (x - startX) * SCROLL_SPEED;
-	slider.scrollLeft = scrollLeft - walk;
-});
+// 	slider.addEventListener('mousedown', e => {
+// 	isDown = true;
+// 	slider.classList.add('active');
+// 	startX = e.pageX - slider.offsetLeft;
+// 	scrollLeft = slider.scrollLeft;
+// 	});
+// 	slider.addEventListener('mouseleave', _ => {
+// 	isDown = false;
+// 	slider.classList.remove('active');
+// 	});
+// 	slider.addEventListener('mouseup', _ => {
+// 	isDown = false;
+// 	slider.classList.remove('active');
+// 	});
+// 	slider.addEventListener('mousemove', e => {
+// 	if (!isDown) return;
+// 	e.preventDefault();
+// 	const x = e.pageX - slider.offsetLeft;
+// 	const SCROLL_SPEED = 2;
+// 	const walk = (x - startX) * SCROLL_SPEED;
+// 	slider.scrollLeft = scrollLeft - walk;
+// });
 
 
 // CLONE DE ITENS DO CARROSSEL - REMOVER DEPOIS DA INTEGRAÇÃO

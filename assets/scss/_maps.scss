@@ -14,7 +14,7 @@
       background: $background-2;
       border: 1px solid $black;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 12px;
       line-height: 25px;
       color: $black;
       width: 280px;
@@ -24,11 +24,12 @@
 
     .map-btn {
       position: absolute;
-      bottom: 70px;
+      bottom: 44%;
       left: 0;
       right: 0;
-      width: 538px;
+      width: 408px;
       margin: 0 auto;
+      font-size: 15px;
 
       span {
         position: relative;
@@ -45,4 +46,52 @@
       }
     }
   }
+}
+
+.map-localization {
+  background: $background-1;
+  padding: 60px 0;
+
+  h2 {
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    color: #000000;
+    text-align: center;
+  }
+
+  p {
+    font-weight: 700 !important;
+    font-size: 15px !important;
+
+    &::before {
+      display: none !important;
+    }
+  }
+  .map-select {
+    position: relative;
+
+    iframe {
+      filter: blur(4px);
+      margin: 0 auto;
+      display: block;
+    }
+
+    .map-btn {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50px;
+      font-size: 15px;
+      padding: 10px 30px;
+
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.maps-hide {
+  display: none;
 }

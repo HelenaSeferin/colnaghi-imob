@@ -23,19 +23,23 @@ footer {
   }
 
   .links {
+    padding: 0 20px;
     .social-links {
       margin-bottom: 50px;
 
       a {
         display: inline-flex;
         background-color: $base-2;
-        padding: 7px;
+        padding: 5px;
         border-radius: 50%;
-        margin-right: 22px;
+        margin-right: 8px;
 
         @media (max-width: 1450px) {
-          padding: 7px;
           margin-right: 13px;
+        }
+
+        @media (max-width: 450px) {
+          margin-right: 5px;
         }
         &:hover {
           background-color: $primary-2;
@@ -47,6 +51,9 @@ footer {
           font-size: 41px;
           @media (max-width: 1024px) {
             font-size: 38px;
+          }
+          @media (max-width: 450px) {
+            font-size: 33px;
           }
         }
       }
@@ -67,10 +74,11 @@ footer {
         font-weight: 500;
         font-size: 16px;
         color: $primary-3;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
 
         i {
           font-size: 34px;
+          margin-right: 10px;
         }
       }
     }

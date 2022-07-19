@@ -3,8 +3,8 @@
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  z-index: 997;
-  padding: 27px 0;
+  z-index: 99999;
+  padding: 22px 0;
   background: $background-2;
 
   @media (max-width: 1450px) {
@@ -30,6 +30,9 @@
     display: none;
     @media (max-width: 1024px) {
       display: block;
+      img {
+        width: 120px;
+      }
     }
   }
   .navbar {
@@ -74,15 +77,14 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 10px 0 10px 30px;
-          font-size: 19px;
-          font-weight: 400;
+          padding: 10px 0 10px 50px;
+          font-size: 15px;
+          font-weight: 300;
           color: $base-1;
           white-space: nowrap;
           transition: 0.3s;
 
           @media (max-width: 1450px) {
-            font-size: 16px;
             padding: 0 8px;
           }
         }
@@ -98,19 +100,23 @@
 
     .getstarted,
     .getstarted:focus {
-      padding: 13px 14px;
+      padding: 11px 14px;
       margin-left: 30px;
       border-radius: 15px;
       color: $background-2;
-      font-size: 18px;
+      font-size: 15px;
       background-color: $primary-4;
       font-weight: 700;
       display: block;
-      width: 145px;
+      width: 122px;
       text-align: center;
+      &:hover {
+        background-color: $primary-1;
+        color: $background-2;
+      }
 
       &:focus:hover {
-        color: #fff;
+        color: $background-2;
         background: $primary-1;
       }
       @media (max-width: 1450px) {
@@ -155,9 +161,9 @@
 
           a {
             padding: 10px 20px;
-            font-size: 17px !important;
+            font-size: 15px;
             text-transform: none;
-            font-weight: 400;
+            font-weight: 300;
             color: $base-1;
 
             i {
@@ -264,6 +270,7 @@
   bottom: 0;
   transition: 0.3s;
   z-index: 999;
+  backdrop-filter: blur(19px);
 
   ul {
     display: block !important;
@@ -285,6 +292,10 @@
     padding: 40px 45px !important;
     background-color: $background-2;
     transition: 0.3s;
+
+    @media (max-width: 450px) {
+      padding: 40px 20px !important;
+    }
   }
 
   .dropdown {
@@ -318,4 +329,12 @@
 
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
+}
+
+#pages {
+  .mobile-nav-toggle {
+    span {
+      background-color: $primary-2;
+    }
+  }
 }

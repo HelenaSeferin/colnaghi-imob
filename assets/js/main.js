@@ -217,7 +217,7 @@
     speed: 400,
     loop: true,
     slidesPerView: 3, 
-    centeredSlides: true,
+    // centeredSlides: true,
     autoplay: false,
     
     autoplay: {
@@ -240,6 +240,19 @@
     $(this).toggleClass("fa-heart fa-heart-o");
   });
 
+
+    /**
+   * FORM ATIVAR OPÇÃO DE VISITA
+   */
+
+  $(".step-week-content .step-week").click(function() {
+    $(this).toggleClass("active");
+  });
+
+  $(".step-when-content .step-when").click(function() {
+    $(this).toggleClass("active");
+  });
+
   /**
    * BOTÃO SUCESSO ENVIO NEWS
    */
@@ -253,6 +266,108 @@
     $( ".form-news" ).first().fadeIn( "slow" );
     $( ".form-sucess" ).hide();
   });
+
+
+  $( "#modal-form .next" ).click(function() {
+    $( "#modal-form .step-one" ).hide();
+    $( "#modal-form .step-two" ).show();
+  });
+
+  $( "#modal-form .form-send" ).click(function() {
+    $( "#modal-form .step-two" ).hide();
+    $( "#modal-form .step-success" ).show();
+  });
+
+  $( ".product-header-item.maps" ).click(function() {
+    $( ".gallery-product" ).hide();
+    $( ".maps-hide " ).show();
+  });
+
+
+  $( ".product-header-item.photos" ).click(function() {
+    $( ".maps-hide " ).hide();
+    $( ".gallery-product" ).show();
+   
+  });
+
+  $( ".block-local" ).click(function() {
+    $( "#modal-form .step-one" ).hide();
+    $( "#modal-form .step-two" ).show();
+  });
+
+
+ 
+
+
+  $(document).ready(function() { 
+    $(window).bind("resize", function () {
+      if ($(this).width() >= 767 &&  $(this).width() <= 1500) {
+       
+        $(window).on('scroll', function() {
+          let height = $(document).height() -$(this).height();
+          let scroll = $(this).scrollTop();
+          let percent = Math.round( scroll / height *100 );
+      
+          if( percent <= 20 ){
+            $('.product .product-box').removeClass('sticky').removeClass('bottom');
+          } else {
+            if( percent > 20 && percent < 50 ) {
+              $('.product .product-box').removeClass('bottom').addClass('sticky');      
+            } else {
+              $('.product .product-box').removeClass('sticky').addClass('bottom');  
+            }
+          }     
+        });          
+          
+      } else {
+        
+          $('.product .product-box').removeClass('bottom').removeClass('sticky');   
+        
+      }
+
+      if ($(this).width() >= 1501 ) {
+        $(window).on('scroll', function() {
+          let height = $(document).height() -$(this).height();
+          let scroll = $(this).scrollTop();
+          let percent = Math.round( scroll / height *100 );
+      
+          if( percent <= 20 ){
+            $('.product .product-box').removeClass('sticky').removeClass('bottom');
+          } else {
+            if( percent > 20 && percent < 56 ) {
+              $('.product .product-box').removeClass('bottom').addClass('sticky');      
+            } else {
+              $('.product .product-box').removeClass('sticky').addClass('bottom');  
+            }
+          }     
+      
+        });
+      }
+      
+        
+    }).resize();
+
+  })
+
+
+
+
+
+
+
+
+  $(document).ready(function(){
+    $('.slider-modal').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      autoplay: true
+     
+    });
+  });
+  
+  $('.gallery-slide').slick();
 
   $(document).ready(function() { 
     $(window).bind("resize", function () {
@@ -316,7 +431,104 @@
         $('.district-item').removeClass('district-slide');
     }
     }).resize();
+
+
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: '.slider-nav',
+     
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 10,
+      slideToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      arrows: false,
+      centerMode: true,
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 1900,
+          settings: {
+            slidesToShow: 10
+          }
+        },
+        {
+          breakpoint: 1800,
+          settings: {
+            slidesToShow: 9
+          }
+        },,
+        {
+          breakpoint: 1700,
+          settings: {
+            slidesToShow: 7
+          }
+        },
+        {
+          breakpoint: 1620,
+          settings: {
+            slidesToShow: 7
+          }
+        },
+        {
+          breakpoint: 1450,
+          settings: {
+            slidesToShow: 6,
+            centerPadding: '40px',
+            centerMode: true,
+          }
+        },
+        ,
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 5,
+            centerPadding: '20px',
+            centerMode: true,
+          }
+        },
+        
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            centerPadding: '10px',
+            centerMode: true,
+          }
+        },
+        
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 4,
+            centerPadding: '5px',
+            centerMode: true,
+          }
+        },
+        
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            centerPadding: '5px',
+            centerMode: true,
+          }
+        },
+        
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            centerPadding: '5px',
+            centerMode: true,
+          }
+        }
+      ]
+    });
   })
  
-
 })()
