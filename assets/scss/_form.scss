@@ -228,15 +228,37 @@ form {
     justify-content: space-between;
   }
 
-  @media (max-width: 991px) {
-    padding-bottom: 0;
-  }
-
   .filters-box {
     padding: 50px 50px 0;
+    margin: 0 10%;
 
-    @media (max-width: 450px) {
-      padding: 25px 20px 0;
+    @media (max-width: 991px) {
+      padding: 30px 38px 10px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .btn-collapse {
+        border: 1px solid $primary-3;
+        color: $primary-3;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        width: 100%;
+        padding: 12px;
+        &:hover {
+          color: $background-2 !important;
+        }
+
+        img {
+          margin-left: 10px;
+        }
+      }
+
+      #collapseFilters {
+        width: 100%;
+      }
     }
 
     .filters-search {
@@ -298,7 +320,9 @@ form {
           width: 184px;
 
           @media (max-width: 991px) {
-            width: 80%;
+            width: 100%;
+            padding: 7px;
+            font-size: 16px;
             border: 1px solid #b02a37;
             background: transparent;
             color: #b02a37;
@@ -321,12 +345,20 @@ form {
     margin-bottom: 15px;
     position: relative;
 
+    @media (max-width: 650px) {
+      text-align: center;
+    }
+
     .form-center {
       width: 60%;
     }
 
     .checkbox {
       padding: 16px;
+
+      @media (max-width: 767px) {
+        padding: 0;
+      }
 
       label {
         font-weight: 300;
@@ -388,6 +420,7 @@ form {
         width: 100%;
         max-width: 100%;
         height: 38px;
+        border-radius: 8px;
         .filter-option {
           padding: 0 1px;
         }

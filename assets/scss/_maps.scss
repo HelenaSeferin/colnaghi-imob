@@ -85,9 +85,25 @@
       font-size: 15px;
       padding: 10px 30px;
 
+      @media (max-width: 767px) {
+        font-size: 12px;
+        padding: 10px 6px;
+      }
+
       img {
         margin-right: 5px;
       }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .div-title h2 {
+      font-weight: 400 !important;
+      font-size: 15px !important;
+    }
+    .section-paragraph {
+      font-weight: 400 !important;
+      font-size: 12px !important;
     }
   }
 }

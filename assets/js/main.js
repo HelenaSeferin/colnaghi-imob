@@ -372,6 +372,8 @@
   $(document).ready(function() { 
     $(window).bind("resize", function () {
       if ($(this).width() <= 1024) {
+
+        $('.filters-box .collapse').removeClass('show');
         $('.gallery').addClass('mobile-slide');
         
         $('.mobile-slide').slick({
@@ -407,6 +409,8 @@
           
       } else {
           $('.gallery').removeClass('mobile-slide');
+          $('.filters-box .collapse').addClass('show');
+          $('.btn-collapse').hide();
       }
 
       if ($(this).width() <= 768) {

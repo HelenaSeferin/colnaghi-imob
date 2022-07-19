@@ -1070,6 +1070,19 @@ a:hover {
   max-width: 55%;
 }
 
+@media (max-width: 767px) {
+  .district .container-mob-full {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .district .container-mob-full {
+    max-width: 45%;
+  }
+}
+
 .district .section-paragraph {
   max-width: 84%;
   margin: 0 auto 55px;
@@ -1997,19 +2010,45 @@ form ::-ms-input-placeholder {
   }
 }
 
-@media (max-width: 991px) {
-  .filters {
-    padding-bottom: 0;
-  }
-}
-
 .filters .filters-box {
   padding: 50px 50px 0;
+  margin: 0 10%;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 991px) {
   .filters .filters-box {
-    padding: 25px 20px 0;
+    padding: 30px 38px 10px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filters .filters-box .btn-collapse {
+    border: 1px solid #b02a37;
+    color: #b02a37;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px;
+  }
+  .filters .filters-box .btn-collapse:hover {
+    color: #ffffff !important;
+  }
+  .filters .filters-box .btn-collapse img {
+    margin-left: 10px;
+  }
+  .filters .filters-box #collapseFilters {
+    width: 100%;
   }
 }
 
@@ -2106,7 +2145,9 @@ form ::-ms-input-placeholder {
 
 @media (max-width: 991px) {
   .filters .filters-box .filters-bottom .filters-form .btn-filters {
-    width: 80%;
+    width: 100%;
+    padding: 7px;
+    font-size: 16px;
     border: 1px solid #b02a37;
     background: transparent;
     color: #b02a37;
@@ -2132,12 +2173,24 @@ form ::-ms-input-placeholder {
   position: relative;
 }
 
+@media (max-width: 650px) {
+  .filters .filters-form {
+    text-align: center;
+  }
+}
+
 .filters .filters-form .form-center {
   width: 60%;
 }
 
 .filters .filters-form .checkbox {
   padding: 16px;
+}
+
+@media (max-width: 767px) {
+  .filters .filters-form .checkbox {
+    padding: 0;
+  }
 }
 
 .filters .filters-form .checkbox label {
@@ -2207,6 +2260,7 @@ form ::-ms-input-placeholder {
     width: 100%;
     max-width: 100%;
     height: 38px;
+    border-radius: 8px;
   }
   .filters .filters-form .btn .filter-option {
     padding: 0 1px;
@@ -2636,8 +2690,26 @@ input[type="checkbox"]:checked + label:after {
   padding: 10px 30px;
 }
 
+@media (max-width: 767px) {
+  .map-localization .map-select .map-btn {
+    font-size: 12px;
+    padding: 10px 6px;
+  }
+}
+
 .map-localization .map-select .map-btn img {
   margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+  .map-localization .div-title h2 {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+  }
+  .map-localization .section-paragraph {
+    font-weight: 400 !important;
+    font-size: 12px !important;
+  }
 }
 
 .maps-hide {
@@ -3798,7 +3870,7 @@ input[type="checkbox"]:checked + label:after {
   color: #842029;
   text-align: center;
   font-weight: 400;
-  border: 3px solid #842029;
+  border: 2px solid #842029;
   border-radius: 16px;
 }
 
