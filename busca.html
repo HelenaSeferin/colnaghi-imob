@@ -68,172 +68,189 @@
       <section class="filters">
         <div class="container">
           <div class="bs filters-box">
-            <form action="" class="filters-form">
-              <div class="filters-search">
-                <div class="filters-form">
-                  <label for="perfil">Perfil</label>
-                  <select
-                    class="selectpicker"
-                    multiple
-                    data-selected-text-format="values"
-                    title="Perfil"
-                    id="perfil"
-                  >
-                    <option>Opção 1</option>
-                    <option>Opção 2</option>
-                    <option>Opção 3</option>
-                  </select>
-                </div>
+            <button
+              class="btn btn--inverse btn-primary btn-collapse"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseFilters"
+              aria-expanded="false"
+              aria-controls="collapseFilters"
+            >
+              Refine sua Busca <img src="/assets/img/icons/arrow.png" alt="" />
+            </button>
+            <div class="collapse show" id="collapseFilters">
+              <form action="" class="filters-form">
+                <div class="filters-search">
+                  <div class="filters-form">
+                    <label for="perfil">Perfil</label>
+                    <select
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="values"
+                      title="Perfil"
+                      id="perfil"
+                    >
+                      <option>Opção 1</option>
+                      <option>Opção 2</option>
+                      <option>Opção 3</option>
+                    </select>
+                  </div>
 
-                <div class="filters-form">
-                  <label for="type">Tipo</label>
-                  <select
-                    class="selectpicker"
-                    multiple
-                    data-selected-text-format="values"
-                    title="Tipo"
-                    id="type"
-                  >
-                    <option>Opção 1</option>
-                    <option>Opção 2</option>
-                    <option>Opção 3</option>
-                  </select>
-                </div>
+                  <div class="filters-form">
+                    <label for="type">Tipo</label>
+                    <select
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="values"
+                      title="Tipo"
+                      id="type"
+                    >
+                      <option>Opção 1</option>
+                      <option>Opção 2</option>
+                      <option>Opção 3</option>
+                    </select>
+                  </div>
 
-                <div class="filters-form">
-                  <label for="district">Bairro</label>
-                  <select
-                    class="selectpicker"
-                    multiple
-                    data-selected-text-format="values"
-                    title="Bairro"
-                    id="district"
-                  >
-                    <option>Opção 1</option>
-                    <option>Opção 2</option>
-                    <option>Opção 3</option>
-                    <option>Opção 4</option>
-                    <option>Opção 5</option>
-                    <option>Opção 6</option>
-                    <option>Opção 7</option>
-                    <option>Opção 8</option>
-                    <option>Opção 9</option>
-                  </select>
-                </div>
+                  <div class="filters-form">
+                    <label for="district">Bairro</label>
+                    <select
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="values"
+                      title="Bairro"
+                      id="district"
+                    >
+                      <option>Opção 1</option>
+                      <option>Opção 2</option>
+                      <option>Opção 3</option>
+                      <option>Opção 4</option>
+                      <option>Opção 5</option>
+                      <option>Opção 6</option>
+                      <option>Opção 7</option>
+                      <option>Opção 8</option>
+                      <option>Opção 9</option>
+                    </select>
+                  </div>
 
-                <div class="filters-form">
-                  <label for="rooms">Dormitórios</label>
-                  <select
-                    class="selectpicker"
-                    multiple
-                    data-selected-text-format="values"
-                    title="Dormitórios"
-                    id="rooms"
-                  >
-                    <option>Opção 1</option>
-                    <option>Opção 2</option>
-                    <option>Opção 3</option>
-                  </select>
-                </div>
+                  <div class="filters-form">
+                    <label for="rooms">Dormitórios</label>
+                    <select
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="values"
+                      title="Dormitórios"
+                      id="rooms"
+                    >
+                      <option>Opção 1</option>
+                      <option>Opção 2</option>
+                      <option>Opção 3</option>
+                    </select>
+                  </div>
 
-                <div class="filters-form">
-                  <label for="suites">Suítes</label>
-                  <select
-                    class="selectpicker"
-                    multiple
-                    data-selected-text-format="values"
-                    title="Suítes"
-                    id="suites"
-                  >
-                    <option>Opção 1</option>
-                    <option>Opção 2</option>
-                    <option>Opção 3</option>
-                  </select>
-                </div>
+                  <div class="filters-form">
+                    <label for="suites">Suítes</label>
+                    <select
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="values"
+                      title="Suítes"
+                      id="suites"
+                    >
+                      <option>Opção 1</option>
+                      <option>Opção 2</option>
+                      <option>Opção 3</option>
+                    </select>
+                  </div>
 
-                <div class="filters-form">
-                  <label for="meters">m2</label>
-                  <select
-                    class="selectpicker"
-                    multiple
-                    data-selected-text-format="values"
-                    title="m2"
-                    id="meters"
-                  >
-                    <option>Opção 1</option>
-                    <option>Opção 2</option>
-                    <option>Opção 3</option>
-                  </select>
-                </div>
+                  <div class="filters-form">
+                    <label for="meters">m2</label>
+                    <select
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="values"
+                      title="m2"
+                      id="meters"
+                    >
+                      <option>Opção 1</option>
+                      <option>Opção 2</option>
+                      <option>Opção 3</option>
+                    </select>
+                  </div>
 
-                <div class="filters-form">
-                  <label for="garage">Vagas</label>
-                  <select
-                    class="selectpicker"
-                    multiple
-                    data-selected-text-format="values"
-                    title="Vagas"
-                    id="garage"
-                  >
-                    <option>Opção 1</option>
-                    <option>Opção 2</option>
-                    <option>Opção 3</option>
-                  </select>
-                </div>
+                  <div class="filters-form">
+                    <label for="garage">Vagas</label>
+                    <select
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="values"
+                      title="Vagas"
+                      id="garage"
+                    >
+                      <option>Opção 1</option>
+                      <option>Opção 2</option>
+                      <option>Opção 3</option>
+                    </select>
+                  </div>
 
-                <div class="filters-form">
-                  <label for="value">Valor</label>
-                  <select
-                    class="selectpicker"
-                    multiple
-                    data-selected-text-format="values"
-                    title="Valor"
-                    id="value"
-                  >
-                    <option>Opção 1</option>
-                    <option>Opção 2</option>
-                    <option>Opção 3</option>
-                  </select>
+                  <div class="filters-form">
+                    <label for="value">Valor</label>
+                    <select
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="values"
+                      title="Valor"
+                      id="value"
+                    >
+                      <option>Opção 1</option>
+                      <option>Opção 2</option>
+                      <option>Opção 3</option>
+                    </select>
+                  </div>
                 </div>
-              </div>
-              <div class="filters-bottom">
-                <div class="filters-form">
-                  <div class="checkbox filter-mob">
+                <div class="filters-bottom">
+                  <div class="filters-form">
+                    <div class="checkbox filter-mob">
+                      <input
+                        id="check"
+                        type="checkbox"
+                        name="check"
+                        value="check"
+                      />
+                      <label for="check">Em construção</label>
+                    </div>
+                    <button class="btn-filters center">Buscar</button>
+                  </div>
+
+                  <div class="filters-form">
+                    <span class="filter-mob">Já tenho o código do imóvel</span>
                     <input
-                      id="check"
+                      type="text"
+                      placeholder="Código"
+                      id="code"
+                      class="filter-mob"
+                    />
+                    <button class="btn-filters-small filter-mob">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                  <div class="checkbox dp-desk">
+                    <input
+                      id="checkmob"
                       type="checkbox"
                       name="check"
                       value="check"
                     />
-                    <label for="check">Em construção</label>
+                    <label for="checkmob">Imóveis em contrução</label>
                   </div>
-                  <button class="btn-filters center">Buscar</button>
                 </div>
-
-                <div class="filters-form">
-                  <span class="filter-mob">Já tenho o código do imóvel</span>
-                  <input
-                    type="text"
-                    placeholder="Código"
-                    id="code"
-                    class="filter-mob"
-                  />
-                  <button class="btn-filters-small filter-mob">
-                    <i class="fa fa-search"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="filters dp-desk">
         <div class="container filters-form">
-          <div class="checkbox">
-            <input id="checkmob" type="checkbox" name="check" value="check" />
-            <label for="checkmob">Imóveis em contrução</label>
-          </div>
           <span>Já tenho o código do imóvel</span>
           <input
             type="text"
@@ -339,7 +356,7 @@
                 </div>
               </div>
               <div class="properties-button">
-                <a href="#" class="btn btn--inverse">
+                <a href="/imovel.html" class="btn btn--inverse">
                   <div class="mob-hide">Ver detalhes</div>
                   <div class="mob-show">
                     <svg
