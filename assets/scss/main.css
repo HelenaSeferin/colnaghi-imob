@@ -134,6 +134,7 @@
 
 #internal .listingpage {
   height: 100%;
+  padding: 10px;
 }
 
 #internal .listingpage .listingpage-box {
@@ -406,7 +407,6 @@
 @media (max-width: 767px) {
   #internal .listingpage .listinpage-itens .box-properties .properties-image .slick-arrow {
     padding: 17px;
-    border: 1px solid #ffffff;
   }
 }
 
@@ -891,6 +891,10 @@ a:hover {
   display: block !important;
   margin: 0 auto;
   width: 300px;
+}
+
+.dp-none {
+  display: none !important;
 }
 
 .red {

@@ -1,6 +1,7 @@
 #internal {
   .listingpage {
     height: 100%;
+    padding: 10px;
     .listingpage-box {
       display: flex;
       justify-content: space-between;
@@ -219,7 +220,7 @@
 
             @media (max-width: 767px) {
               padding: 17px;
-              border: 1px solid $background-2;
+              // border: 1px solid $background-2;
             }
           }
           .slick-prev {
