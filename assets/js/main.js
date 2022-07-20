@@ -373,7 +373,6 @@
     $(window).bind("resize", function () {
       if ($(this).width() <= 1024) {
 
-        $('.filters-box .collapse').removeClass('show');
         $('.gallery').addClass('mobile-slide');
         
         $('.mobile-slide').slick({
@@ -535,4 +534,5 @@
     });
   })
  
+  
 })()
