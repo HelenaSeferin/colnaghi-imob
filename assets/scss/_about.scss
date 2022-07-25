@@ -1,0 +1,30 @@
+.about {
+  .aboutUs {
+    display: flex;
+    padding: 0;
+    height: 375px;
+    .about-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 35px 30px;
+      color: $base-1;
+      text-align: center;
+
+      h2 {
+        font-size: 26px;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+      }
+    }
+    .about-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

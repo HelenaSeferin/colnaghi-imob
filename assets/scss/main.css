@@ -1,5 +1,43 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800&display=swap");
+.about .aboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  height: 375px;
+}
+
+.about .aboutUs .about-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px 30px;
+  color: #222222;
+  text-align: center;
+}
+
+.about .aboutUs .about-desc h2 {
+  font-size: 26px;
+}
+
+.about .aboutUs .about-desc p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.about .aboutUs .about-img img {
+  width: 100%;
+}
+
 .announce .announce-box {
   padding: 30px 13%;
   display: -webkit-box !important;
@@ -4181,6 +4219,27 @@ section .section-paragraph-small {
   opacity: 0.75;
 }
 
+.tab .nav {
+  border: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.tab .nav .nav-item button {
+  background: transparent;
+  color: #222222;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.tab .nav .nav-item .active {
+  background: #b02a37;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
 @media (max-width: 1024px) {
   .testimonials {
     display: none;
@@ -4272,5 +4331,11 @@ section .section-paragraph-small {
   height: 18px;
   background: #d7d7d7;
   opacity: 1;
+}
+
+.h1 {
+  color: #494949;
+  font-weight: 500;
+  font-size: 36px;
 }
 /*# sourceMappingURL=main.css.map */

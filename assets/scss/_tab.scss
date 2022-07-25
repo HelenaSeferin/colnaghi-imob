@@ -1,0 +1,27 @@
+.tab {
+  .nav {
+    border: none;
+    justify-content: space-evenly;
+    .nav-item {
+      button {
+        background: transparent;
+        color: $base-1;
+        font-size: 16px;
+        border-radius: 8px;
+      }
+      .active {
+        background: $primary-3;
+        color: $background-2;
+        font-size: 16px;
+        border-radius: 8px;
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+    }
+
+    .active {
+    }
+  }
+}
