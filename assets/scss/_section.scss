@@ -52,3 +52,32 @@ section {
     }
   }
 }
+
+.content-title {
+  h2 {
+    position: relative;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+    color: $base-2;
+    @media (max-width: 991px) {
+      font-size: 15px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 64px;
+      height: 4px;
+      background: #dc3545;
+      top: 50px;
+      left: calc(50% - 35px);
+      border-radius: 4px;
+
+      @media (max-width: 1024px) {
+        top: 50px;
+      }
+    }
+  }
+}

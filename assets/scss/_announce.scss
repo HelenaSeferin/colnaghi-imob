@@ -1,4 +1,10 @@
 .announce {
+  h2 {
+    font-weight: 500;
+    font-size: 26px;
+    color: $base-2;
+    margin-bottom: 15px;
+  }
   .announce-box {
     padding: 30px 13%;
     display: flex !important;
@@ -8,6 +14,148 @@
 
     @media (max-width: 1024px) {
       padding: 50px 25px !important;
+    }
+  }
+  .announce-content {
+    display: flex;
+    gap: 35px;
+
+    @media (max-width: 1199px) {
+      align-items: center;
+    }
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+  .box {
+    flex-direction: column;
+    width: calc(100% / 2);
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  .filters {
+    width: calc(100% / 2);
+    border-radius: 15px;
+    border: 1px solid $base-6;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+    .filters-box {
+      @media (max-width: 991px) {
+        padding: 30px !important;
+        width: 100%;
+      }
+    }
+    .filters-form {
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+      input,
+      .btn {
+        border: 1px solid #ced4da;
+        max-width: 100%;
+        font-size: 15px;
+        color: $base-3;
+
+        @media (max-width: 590px) {
+          width: 100%;
+        }
+      }
+      label {
+        font-weight: 400;
+        font-size: 15px;
+      }
+      input[type="checkbox"] + label:before {
+        border-radius: 2px;
+        border: 1px solid $base-4;
+      }
+      .checkbox {
+        padding: 4px;
+        label::after {
+          border-radius: 2px;
+        }
+      }
+      a {
+        font-weight: 500;
+        font-size: 16px;
+        color: $primary-3;
+      }
+      .btn-inverse {
+        background: #ffffff;
+        color: $primary-3;
+        border-radius: 8px;
+        border: 2px solid $primary-3;
+        font-size: 16px;
+        padding: 8px 10px;
+        float: right;
+
+        @media (max-width: 767px) {
+          width: 158px;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+
+  .box-content {
+    margin-top: 100px;
+  }
+
+  .btn-red {
+    margin: 43px auto;
+    display: block;
+    width: 355px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      font-size: 14px;
+      text-align: center;
+      margin: 20px auto;
+    }
+  }
+}
+
+.announce-form-complete {
+  h4 {
+    font-weight: 400;
+    font-size: 22px;
+    color: $base-2;
+    margin: 30px 0 25px;
+  }
+  .filters {
+    width: 100%;
+
+    .filters-box {
+      margin: 0;
+      width: 100%;
+    }
+
+    .announce-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 13%;
+      .announce-form {
+        width: 100%;
+      }
+
+      .content {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .btn-inverse {
+      max-width: 245px !important;
+      margin: 10px auto 50px !important;
     }
   }
 }

@@ -166,7 +166,7 @@ function multiplyNode(node, count, deep) {
     }
 }
 
-multiplyNode(document.querySelector('.box-properties'), 30, true);
+multiplyNode(document.querySelector('.box-clone'), 10, true);
 
 // CLONE DE ITENS DO BAIRRO - REMOVER DEPOIS DA INTEGRAÇÃO
 function multiplyNode(node, count, deep) {
@@ -177,3 +177,4 @@ function multiplyNode(node, count, deep) {
 }
 
 multiplyNode(document.querySelector('.district-box'), 20, true);
+

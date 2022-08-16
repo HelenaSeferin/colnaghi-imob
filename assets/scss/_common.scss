@@ -145,7 +145,7 @@ a:hover {
 }
 
 .bs {
-  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
   border-radius: 15px;
   padding: 50px 0;
 }
@@ -159,5 +159,11 @@ a:hover {
 @media (max-width: 1024px) {
   .mob-none {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .mob-hide {
+    display: none !important;
   }
 }

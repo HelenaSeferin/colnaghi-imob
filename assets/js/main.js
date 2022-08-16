@@ -232,6 +232,38 @@
       
 
   /**
+   * Portfolio details slider
+   */
+   new Swiper('.portfolio-details-slider2', {
+    speed: 400,
+    loop: true,
+    slidesPerView: 2, 
+    // centeredSlides: true,
+    autoplay: false,
+    
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      2000: {
+        slidesPerView: 2, 
+      },
+      768: {
+        slidesPerView: 1, 
+      },
+     450: {
+      slidesPerView: 1,
+      }
+    }
+  });
+
+  /**
    * FAVORITAR
    */
 
@@ -336,7 +368,7 @@
       }   
     }).resize();
   })
-
+ 
   $(document).ready(function(){
     $('.slider-modal').slick({
       slidesToShow: 1,
@@ -346,9 +378,40 @@
       autoplay: true
      
     });
-  });
   
+    $('.testemonials-video').slick({
+      centerMode: true,
+      centerPadding: '0',
+      slidesToShow: 3,
+      // initialSlide: 1,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '0',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            centerMode: false,
+            centerPadding: '20px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+  });
+
   $('.gallery-slide').slick();
+
+  $('.about-gallery-slide').slick();
 
   $(document).ready(function() { 
     $(window).bind("resize", function () {
@@ -513,6 +576,15 @@
         }
       ]
     });
+
+    function multiplyNode(node, count, deep) {
+      for (var i = 0, copy; i < count - 1; i++) {
+        copy = node.cloneNode(deep);
+        node.parentNode.insertBefore(copy, node);
+      }
+    }
+  
+    multiplyNode(document.querySelector('.district-box'), 20, true);
   })
  
   
