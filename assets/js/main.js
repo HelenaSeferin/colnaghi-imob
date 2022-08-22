@@ -202,6 +202,78 @@
 
   });
 
+  $(".image-box").click(function(event) {
+    var previewImg = $(this).children("img");
+  
+    $(this)
+      .siblings()
+      .children("input")
+      .trigger("click");
+  
+    $(this)
+      .siblings()
+      .children("input")
+      .change(function() {
+        var reader = new FileReader();
+  
+        reader.onload = function(e) {
+          var urll = e.target.result;
+          $(previewImg).attr("src", urll);
+          // previewImg.parent().css("background", "transparent");
+          previewImg.show();
+          // previewImg.siblings("p").hide();
+          $('.upload-hide').hide();
+        };
+        reader.readAsDataURL(this.files[0]);
+      });
+  });
+  
+
+  $('.carousel-properties').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true
+  });
+
+
+  $('.slide').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    centerMode: true,
+    variableWidth: true,
+    centerPadding: '60px',
+    responsive: [
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 3,
+        }
+      },      
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+
+
   /**
    * Initiate portfolio lightbox 
    */
@@ -407,6 +479,59 @@
       ]
     });
 
+  });
+
+//  const controls = document.querySelectorAll(".tab-control");
+//  const tabs = document.querySelectorAll(".tab");
+
+
+//  for (let i = 1; i < tabs.length; i++) {
+//    tabs[i].style.display = "none";
+//  }
+
+
+//  for (let i = 0; i < tabs.length; i++) {
+//    tabs[i].setAttribute("value", i);
+//  }
+
+//  for (let i = 0; i < controls.length; i++) {
+//    controls[i].setAttribute("value", i);
+//    controls[i].addEventListener("click", displayTab);
+//  }
+
+
+//  function displayTab() {
+//    for (let i = 0; i < tabs.length; i++) {
+//      tabs[i].style.display = "none";
+//      controls[i].removeAttribute("id");
+//    }
+//    tabs[this.value].style.display = "block";
+//    controls[this.value].setAttribute("id", "control-selected");
+//  }
+
+  $(".config").click(function() {
+    $("#config").show();
+    $("#home, #perfect").hide();
+  });
+
+  $( ".home" ).click(function() {
+    $( "#home" ).show();
+    $( "#config, #perfect" ).hide();
+  });
+
+  $(".perfect" ).click(function() {
+    $( "#perfect" ).show();
+    $( "#home, #config" ).hide();
+  });
+
+  $(".perfect" ).click(function() {
+    $( "#perfect" ).show();
+    $( "#home, #config" ).hide();
+  });
+
+  $( ".edit-show" ).click(function() {
+    $( ".form-show-edit" ).css("display", "block");
+    $( ".edit-hide" ).hide();
   });
 
   $('.gallery-slide').slick();
