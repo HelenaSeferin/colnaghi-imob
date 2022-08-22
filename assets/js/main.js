@@ -511,27 +511,35 @@
 
   $(".config").click(function() {
     $("#config").show();
-    $("#home, #perfect").hide();
+    $(".config").addClass('control-selected');
+    $(".home, .perfect, .edit-show").removeClass('control-selected');
+    $("#home, #perfect, #favs").hide();
   });
 
   $( ".home" ).click(function() {
     $( "#home" ).show();
-    $( "#config, #perfect" ).hide();
+    $(".home").addClass('control-selected');
+    $(".config, .perfect, .edit-show, .favs-scroll").removeClass('control-selected');
+    $( "#config, #perfect, #favs" ).hide();
   });
 
   $(".perfect" ).click(function() {
     $( "#perfect" ).show();
-    $( "#home, #config" ).hide();
+    $(".perfect").addClass('control-selected');
+    $(".config, .home, .edit-show").removeClass('control-selected');
+    $( "#home, #config,  #favs" ).hide();
   });
-
-  $(".perfect" ).click(function() {
-    $( "#perfect" ).show();
-    $( "#home, #config" ).hide();
-  });
-
+  
   $( ".edit-show" ).click(function() {
     $( ".form-show-edit" ).css("display", "block");
     $( ".edit-hide" ).hide();
+  });
+
+  $( ".favs-modal" ).click(function() {
+    $( "#favs" ).show();
+    $(".favs-modal").addClass('control-selected');
+    $(".config, .home, .edit-show, .perfect").removeClass('control-selected');
+    $( "#home, #config, #perfect" ).hide();
   });
 
   $('.gallery-slide').slick();

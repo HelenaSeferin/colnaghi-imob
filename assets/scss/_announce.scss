@@ -146,6 +146,16 @@
       gap: 13%;
       .announce-form {
         width: 100%;
+
+        .input-icon {
+          position: relative;
+
+          img {
+            position: absolute;
+            right: 17px;
+            top: 13px;
+          }
+        }
       }
 
       .content {

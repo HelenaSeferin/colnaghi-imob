@@ -64,37 +64,41 @@
     <main-header></main-header>
 
     <main id="internal" class="favs">
-      .
- 
-
       <section id="section-tab">
         <ul id="tab-control">
-          <li class="tab-control home" id="control-selected" >
+          <li class="tab-border tab-control home control-selected" >
             <span>Início</span>  
           </li>
-          <li class="tab-control home">
+          <li class="tab-border tab-control home favs-scroll">
             <a href="#fav"> <span>Meus Favoritos</span>  </a>
           </li>
-          <li class="tab-control perfect">
+          <li class="tab-border tab-control perfect">
             <span>Meu Imóvel Perfeito</span>  
           </li>
-          <li class="tab-control" data-toggle="modal"
+          <li class="tab-border tab-control hide-mob" data-toggle="modal"
           data-target="#modal-form">
             <span>Atendimento</span> 
           </li>
-          <li class="tab-control config">
+          <li class="tab-border tab-control hide-desk favs-modal">
+            <span>Atendimento</span> 
+          </li>
+          <li class="tab-border tab-control config">
             <span>Informações da Conta</span> 
           </li>
         </ul>
       
         <div id="tab-div">
-          <div class="box-container">
+          <div class="box-container hide-section">
             <h1>Olá, Vinícus</h1>
             <p>Aqui você encontrar tudo o que precisa para facilitar a experiência de compra do seu imóvel.  Acesse aqui a lista de imóveis salvos, favoritos, imóvel dos sonhos, financiamento e meu corretor. </p>
           </div>
 
            <div class="tab" id="home">     
-            <div class="content-info">
+            <div class="box-container  hide-desk">
+              <h1>Olá, Vinícus</h1>
+              <p>Aqui você encontrar tudo o que precisa para facilitar a experiência de compra do seu imóvel.  Acesse aqui a lista de imóveis salvos, favoritos, imóvel dos sonhos, financiamento e meu corretor. </p>
+            </div>
+            <div class="content-info hide">
               <div class="box-container">
                 <h3>Meu Corretor</h3>
                 <hr>
@@ -493,8 +497,7 @@
                 </div>
               </div>
             </div>
-          </div>
-      
+          </div>       
           <div class="tab" id="config">
             <div class="content-info">
               <div class="box-container">
@@ -612,8 +615,7 @@
                 <button class="btn-save">Salvar</button>
               </form>            
             </div>
-          </div> 
-      
+          </div>        
           <div class="tab" id="perfect">
             <div class="content-info">
               <div class="box-container">
@@ -655,7 +657,7 @@
                           <option>Opção 3</option>
                         </select>
                       </div>
-                      <div class="col-small">
+                      <div class="col-small col-half">
                         <div class="form-item">
                           <label >Valor para Investir</label>
                           <input type="text">
@@ -768,6 +770,43 @@
                   </div>
                  
                   <button class="btn btn-look">Ver o imóvel dos sonhos</button>
+                </form>
+              </div>            
+            </div>
+          </div>
+
+          <div class="tab" id="favs">
+            <div class="content-info">
+              <div class="box-container">
+                <h3>Atendimento</h3>
+                <hr>
+                <form action="" class="form-col">
+                  <div class="form-content">
+                    <div class="col">
+                      <div class="form-item">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" placeholder="Nome Completo" id="name">
+                      </div>
+                      <div class="form-item">
+                        <label for="cpf">CPF</label>
+                        <input type="text" placeholder="CPF" id="cpf">
+                      </div>
+
+                      <div class="form-item">
+                        <label for="phone">Telefone</label>
+                        <input type="text" placeholder="Telefone" id="phone">
+                      </div>
+                      <div class="form-item">
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Email" id="email">
+                      </div>
+                      <div class="form-item">
+                        <label for="message">Mensagem</label>
+                        <textarea name="" placeholder="Digite uma mensagem..." id="message" cols="10" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>                 
+                  <button class="btn btn-look">Solicitar Atendimento</button>
                 </form>
               </div>            
             </div>

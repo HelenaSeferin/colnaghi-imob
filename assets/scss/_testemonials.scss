@@ -71,19 +71,22 @@
   }
 }
 
-.testemonials-video{
+.testemonials-video {
   margin-bottom: 50px;
 }
-.testemonials-content{
-  .btn{
+.testemonials-content {
+  @media (max-width: 1024px) {
+    padding: 30px 0;
+  }
+  .btn {
     margin-top: 10px;
   }
 }
 
-.portfolio-details-slider2{
-  .testimonials-box{
+.portfolio-details-slider2 {
+  .testimonials-box {
     width: 452px;
-    border: 1px solid #DEE2E6;
+    border: 1px solid #dee2e6;
     box-shadow: none;
   }
 }

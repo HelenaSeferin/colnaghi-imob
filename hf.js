@@ -22,7 +22,7 @@ class Header extends HTMLElement {
                   </a>
                 <ul>
                   <li>
-                    <a href="#">Sobre nós</a>
+                    <a href="sobre.html">Sobre nós</a>
                   </li>                  
                   <li>
                     <a href="#">Trabalhe conosco</a>
@@ -37,13 +37,13 @@ class Header extends HTMLElement {
 			  	<a class="nav-link" href="#">Comerciais</a>
 			  </li>
               <li>
-                <a class="nav-link" href="#">Anuncie seu imóvel</a>
+                <a class="nav-link" href="anuncie.html">Anuncie seu imóvel</a>
               </li>
               <li>
                 <a class="nav-link" href="#">Blog</a>
              </li>			
               <li>
-                <a class="nav-link" href="#">Meus Favoritos</a>
+                <a class="nav-link" href="favoritos.html">Meus Favoritos</a>
               </li>
               <li>
                 <a class="getstarted" href="#">Entrar</a>
