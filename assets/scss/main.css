@@ -686,6 +686,50 @@
   }
 }
 
+.banner-section {
+  position: relative;
+  padding: 0 !important;
+  background-image: url(./../../assets/img/banner/banner-bairro.png);
+  height: 510px;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: initial;
+}
+
+.banner-section .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-section .container .bairro-desc {
+  position: absolute;
+  bottom: -120px;
+  right: 0;
+  height: 322px;
+  width: 322px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  text-align: center;
+  text-align: center;
+  color: #494949;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 33px;
+  line-height: 30px;
+}
+
+.banner-section .container .bairro-desc h1 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
 .box {
   display: -webkit-box;
   display: -ms-flexbox;
