@@ -51,12 +51,15 @@
     }
     .photos {
       width: 116px;
-      color: $background-2;
+    }
+    .active-btn {
+      color: $background-2 !important;
       background: $base-1;
-      border: 3px solid $base-1;
+      border: none !important;
     }
     .video,
-    .maps {
+    .maps,
+    .photos {
       width: 116px;
       color: $base-1;
       border: 3px solid $base-3;
@@ -64,6 +67,19 @@
         height: 51px;
       }
     }
+
+    .photo-img {
+      display: none;
+    }
+    .photo-img--active {
+    }
+    .maps-img {
+    }
+
+    .maps-img--active {
+      display: none;
+    }
+
     .contact {
       width: 235px;
       color: $background-2;

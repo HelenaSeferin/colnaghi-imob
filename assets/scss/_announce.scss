@@ -31,15 +31,30 @@
     h2 {
       margin-bottom: 30px;
     }
+    .filters-box {
+      padding: 50px 0px 0 !important;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .form-anuncie {
+      width: 100%;
+    }
+  }
+
+  .box-content {
+    justify-content: space-evenly;
   }
   .box {
     flex-direction: column;
     width: calc(100% / 2);
     padding: 0;
     display: flex;
+    height: 838px;
     justify-content: space-between;
     @media (max-width: 991px) {
       width: 100%;
+      height: auto;
     }
   }
   .filters {

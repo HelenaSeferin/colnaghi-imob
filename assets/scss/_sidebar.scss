@@ -1,19 +1,30 @@
 #section-tab {
   display: flex;
+  padding: 60px 0;
 
   @media (max-width: 1024px) {
     display: block;
+    padding: 0;
   }
   ul {
+    position: fixed;
     list-style: none;
     padding-left: 0;
     margin-top: 80px;
     @media (max-width: 1024px) {
       display: flex;
       gap: 10px;
+      margin-top: 20px;
+      position: relative;
     }
   }
 
+  .tabs {
+    width: 30vw;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
   .tab-control {
     width: 30vw;
     padding: 3px 0;

@@ -65,27 +65,30 @@
 
     <main id="internal" class="favs">
       <section id="section-tab">
-        <ul id="tab-control">
-          <li class="tab-border tab-control home control-selected" >
-            <span>Início</span>  
-          </li>
-          <li class="tab-border tab-control home favs-scroll">
-            <a href="#fav"> <span>Meus Favoritos</span>  </a>
-          </li>
-          <li class="tab-border tab-control perfect">
-            <span>Meu Imóvel Perfeito</span>  
-          </li>
-          <li class="tab-border tab-control hide-mob" data-toggle="modal"
-          data-target="#modal-form">
-            <span>Atendimento</span> 
-          </li>
-          <li class="tab-border tab-control hide-desk favs-modal">
-            <span>Atendimento</span> 
-          </li>
-          <li class="tab-border tab-control config">
-            <span>Informações da Conta</span> 
-          </li>
-        </ul>
+        <div class="tabs">
+          <ul id="tab-control">
+            <li class="tab-border tab-control home control-selected" >
+              <span>Início</span>  
+            </li>
+            <li class="tab-border tab-control home favs-scroll">
+              <a href="#fav"> <span>Meus Favoritos</span>  </a>
+            </li>
+            <li class="tab-border tab-control perfect">
+              <span>Meu Imóvel Perfeito</span>  
+            </li>
+            <li class="tab-border tab-control hide-mob" data-toggle="modal"
+            data-target="#modal-form">
+              <span>Atendimento</span> 
+            </li>
+            <li class="tab-border tab-control hide-desk favs-modal">
+              <span>Atendimento</span> 
+            </li>
+            <li class="tab-border tab-control config">
+              <span>Informações da Conta</span> 
+            </li>
+          </ul>
+        </div>
+        
       
         <div id="tab-div">
           <div class="box-container hide-section">
@@ -118,7 +121,7 @@
             <div class="content-info">
               <div class="box-container">
                 <h3>Conheça a Colnaghi</h3>
-                <hr id="fav">  
+                <hr>  
               </div>              
               <div class="slide">
                 <div class="slide-img">
@@ -143,13 +146,14 @@
                   <img src="/assets/img/carousel.png" alt="">
                 </div>
               </div>
-            </div>         
+            </div>   
+            <br id="fav">      
             <div class="content-info" >
               <div class="box-container">
                 <h3>Meus Favoritos</h3>
                 <hr>   
               </div>              
-              <div class="properties">
+              <div class="properties"  >
                 <div class="gallery carousel-properties">
                   <div class="box-properties no-padding align-items-center justify-content-center">
                     <div class="properties-image">

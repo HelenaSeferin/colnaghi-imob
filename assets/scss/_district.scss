@@ -24,6 +24,9 @@
     @media (max-width: 1600px) {
       max-width: 750px;
       margin: 0 auto;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
     }
 
     @media (max-width: 1400px) {

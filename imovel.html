@@ -310,14 +310,34 @@
           <div class="row">
             <div class="col-lg-7 col-md-6 col-xs-12 prod-col">
               <div class="product-header">
-                <div class="product-header-item photos">
-                  <img src="/assets/img/icons/photos.png" alt="" /> Fotos
+                <div class="product-header-item photos active-btn">
+                  <img
+                    src="/assets/img/icons/photos.png"
+                    alt=""
+                    class="photo-img"
+                  />
+                  <img
+                    src="/assets/img/icons/photos-active.png"
+                    class="photo-img--active"
+                    alt=""
+                  />
+                  Fotos
                 </div>
                 <div class="product-header-item video">
                   <img src="/assets/img/icons/video.png" alt="" /> Vídeo
                 </div>
                 <div class="product-header-item maps">
-                  <img src="/assets/img/icons/maps.png" alt="" /> Mapa
+                  <img
+                    src="/assets/img/icons/maps.png"
+                    alt=""
+                    class="maps-img"
+                  />
+                  <img
+                    src="/assets/img/icons/maps-active.png"
+                    alt=""
+                    class="maps-img--active"
+                  />
+                  Mapa
                 </div>
                 <div
                   class="product-header-item contact"
@@ -499,7 +519,7 @@
       <section id="properties" class="properties">
         <div class="">
           <div class="section-title">
-            <h2>Imóveis recomendados</h2>
+            <h2 class="open-modal">Imóveis recomendados</h2>
           </div>
           <p class="section-paragraph">Você vai amar estas opções de imóveis</p>
           <div class="box-propierties-slide gallery">
@@ -798,7 +818,29 @@
           </div>
         </div>
       </section>
+      <div class="modal fade" id="modal-default">
+        <div class="modal-dialog steps-contact">
+          <div class="modal-content step-success">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <div>
+                <h4 class="modal-title">Recebemos sua solicitação</h4>
 
+                <p>Entraremos em contato em breve!</p>
+              </div>
+            </div>
+            <div class="modal-body">
+              <button
+                type="button"
+                class="close btn btn--inverse"
+                data-dismiss="modal"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="to-top">
         <a
           href="#"

@@ -148,6 +148,16 @@
   line-height: 19px;
   color: #494949;
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 991px) {
@@ -188,9 +198,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media (max-width: 991px) {
@@ -431,6 +441,22 @@
   margin-bottom: 30px;
 }
 
+.announce .announce-content .filters-box {
+  padding: 50px 0px 0 !important;
+}
+
+@media (max-width: 991px) {
+  .announce .form-anuncie {
+    width: 100%;
+  }
+}
+
+.announce .box-content {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .announce .box {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -441,6 +467,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 838px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -449,6 +476,7 @@
 @media (max-width: 991px) {
   .announce .box {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -1304,6 +1332,7 @@
 @media (max-width: 399px) {
   .testemonials .testemonials-video-item {
     height: auto;
+    padding: 0 40px;
   }
 }
 
@@ -1374,6 +1403,7 @@
 @media (max-width: 767px) {
   .testemonials .testemonials-video .slick-prev {
     border-radius: 0px 8px 8px 0px;
+    left: -5px;
   }
 }
 
@@ -1429,6 +1459,7 @@
 @media (max-width: 767px) {
   .testemonials .testemonials-video .slick-next {
     border-radius: 8px 0px 0px 8px;
+    right: -6px;
   }
 }
 
@@ -1812,6 +1843,13 @@ a:hover {
   .district .district-item {
     max-width: 750px;
     margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: scroll;
   }
 }
 
@@ -1918,7 +1956,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 2% 0 1%;
+  margin: 0 7% 0 1%;
 }
 
 .favs .broker-content .desc h4 {
@@ -1968,6 +2006,7 @@ a:hover {
 
 .favs .properties .box-properties {
   min-width: auto !important;
+  padding: 0 4px;
 }
 
 .favs .properties .slick-list {
@@ -4465,6 +4504,10 @@ input[type="checkbox"]:checked + label:after {
   }
 }
 
+.listing .listing-box .listing-desc {
+  padding: 14px 0;
+}
+
 .listing .listing-box .listing-desc h4 {
   font-weight: 400;
   font-size: 22px;
@@ -5661,13 +5704,17 @@ input[type="checkbox"]:checked + label:after {
 
 .product .product-header .photos {
   width: 116px;
-  color: #ffffff;
+}
+
+.product .product-header .active-btn {
+  color: #ffffff !important;
   background: #222222;
-  border: 3px solid #222222;
+  border: none !important;
 }
 
 .product .product-header .video,
-.product .product-header .maps {
+.product .product-header .maps,
+.product .product-header .photos {
   width: 116px;
   color: #222222;
   border: 3px solid #888888;
@@ -5675,9 +5722,18 @@ input[type="checkbox"]:checked + label:after {
 
 @media (max-width: 767px) {
   .product .product-header .video,
-  .product .product-header .maps {
+  .product .product-header .maps,
+  .product .product-header .photos {
     height: 51px;
   }
+}
+
+.product .product-header .photo-img {
+  display: none;
+}
+
+.product .product-header .maps-img--active {
+  display: none;
 }
 
 .product .product-header .contact {
@@ -6398,15 +6454,18 @@ section .section-paragraph-small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 60px 0;
 }
 
 @media (max-width: 1024px) {
   #section-tab {
     display: block;
+    padding: 0;
   }
 }
 
 #section-tab ul {
+  position: fixed;
   list-style: none;
   padding-left: 0;
   margin-top: 80px;
@@ -6418,6 +6477,18 @@ section .section-paragraph-small {
     display: -ms-flexbox;
     display: flex;
     gap: 10px;
+    margin-top: 20px;
+    position: relative;
+  }
+}
+
+#section-tab .tabs {
+  width: 30vw;
+}
+
+@media (max-width: 1024px) {
+  #section-tab .tabs {
+    width: 100%;
   }
 }
 

@@ -73,6 +73,9 @@
 
 .testemonials-video {
   margin-bottom: 50px;
+
+  @media (max-width: 1024px) {
+  }
 }
 .testemonials-content {
   @media (max-width: 1024px) {

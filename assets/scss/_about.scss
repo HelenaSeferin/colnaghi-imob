@@ -93,15 +93,15 @@
       }
     }
     .tab-desc {
-    }
-
-    .tab-desc {
       padding: 30px 60px;
       text-align: center;
       font-size: 15px;
       line-height: 19px;
       color: $base-2;
       width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       @media (max-width: 991px) {
         width: 100%;
         padding: 30px;
@@ -130,7 +130,7 @@
   .seniors-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     @media (max-width: 991px) {
       overflow: scroll;
       gap: 20px;
