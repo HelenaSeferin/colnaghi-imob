@@ -236,6 +236,22 @@
     arrows: true
   });
 
+  $('.carousel-bairros').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+     
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
+  });
+
 
   $('.slide').slick({
     infinite: true,

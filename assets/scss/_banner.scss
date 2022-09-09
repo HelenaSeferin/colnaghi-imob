@@ -72,10 +72,28 @@
       padding: 33px;
       line-height: 30px;
 
+      @media (max-width: 991px) {
+        transform: translateX(-40%);
+      }
+      @media (max-width: 580px) {
+        transform: translateX(-8%);
+      }
+
       h1 {
         font-weight: 700;
         font-size: 20px;
         line-height: 25px;
+      }
+
+      p::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 64px;
+        height: 5px;
+        background: #dc3545;
+        bottom: 42px;
+        left: calc(50% - 33px);
       }
     }
   }
