@@ -6696,6 +6696,295 @@ input[type="checkbox"]:checked + label:after {
   background-color: #ffffff;
 }
 
+.register .register-data,
+.register .register-email,
+.register .register-password {
+  display: none;
+}
+
+.register .modal-header {
+  position: relative;
+  border-bottom: none;
+  padding: 0;
+}
+
+.register .modal-header .close {
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+
+.register .register-header {
+  border-bottom: 1px solid #000000;
+}
+
+.register .register-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #000000;
+  font-size: 10px;
+  color: #000000;
+}
+
+@media (max-width: 606px) {
+  .register .register-footer {
+    display: block;
+    padding: 16px 0;
+  }
+  .register .register-footer .register-col {
+    padding: 10px 0;
+  }
+}
+
+.register .register-footer button {
+  background: transparent;
+  border: none;
+}
+
+.register .register-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+@media (max-width: 606px) {
+  .register .register-col {
+    display: block;
+    padding: 30px 0px;
+  }
+}
+
+.register .register-col .register-form {
+  padding-right: 30px;
+  border-right: 1px solid #000;
+}
+
+@media (max-width: 606px) {
+  .register .register-col .register-form {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+.register .register-col .register-social {
+  padding-left: 46px;
+}
+
+@media (max-width: 606px) {
+  .register .register-col .register-social {
+    padding-left: 0;
+  }
+}
+
+.register .register-col .register-social p {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #000;
+  padding: 10px 0;
+}
+
+@media (max-width: 606px) {
+  .register .register-col .register-form {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+  }
+}
+
+.register .register-col .register-form,
+.register .register-col .register-social {
+  width: calc(100% / 2);
+}
+
+@media (max-width: 606px) {
+  .register .register-col .register-form,
+  .register .register-col .register-social {
+    width: 100%;
+  }
+}
+
+.register .register-col .register-form .register-fb,
+.register .register-col .register-social .register-fb {
+  background: #4285f4;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.register .register-col .register-form .register-fb img,
+.register .register-col .register-social .register-fb img {
+  margin-right: 23px;
+}
+
+.register .register-col .register-form .register-gl,
+.register .register-col .register-social .register-gl {
+  background: #f2f2f2;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 11px;
+  text-align: center;
+  color: #000;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.register .register-col .register-form .register-gl img,
+.register .register-col .register-social .register-gl img {
+  margin-right: 27px;
+  margin-left: -36px;
+}
+
+.register .register-col .register-form .btn,
+.register .register-col .register-social .btn {
+  padding: 5px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.register .register-col .register-form .form-connect .content-btn,
+.register .register-col .register-social .form-connect .content-btn {
+  margin: 0 40px;
+}
+
+.register .register-col form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register .modal-content {
+  padding: 40px 45px 5px;
+}
+
+.register .register-login .register-header {
+  color: #000000;
+}
+
+.register .register-login .register-header h3 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.register .register-login .register-header p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.register .register-data .register-header {
+  color: #000000;
+}
+
+.register .register-data .register-header h3 {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.register .register-data .register-header p {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.register .register-data .content-btn {
+  margin: 0 30px;
+}
+
+.register .register-data .content-btn .btn {
+  font-size: 11px;
+}
+
+.register .register-data .form-content .register-col {
+  padding: 0;
+}
+
+.register .register-email .register-header {
+  color: #000000;
+}
+
+.register .register-email .register-header h3 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.register .register-email .register-header p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.register .register-email .form-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0;
+}
+
+.register .register-email .form-email textarea {
+  padding: 18px;
+}
+
+.register .register-email .form-email .btn {
+  width: 120px;
+  margin: 10px auto 0;
+}
+
+.register .register-password .register-header {
+  color: #000000;
+}
+
+.register .register-password .register-header h3 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.register .register-password .register-header p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.register .register-password .form-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0;
+}
+
+.register .register-password .form-password .btn {
+  width: 153px;
+  margin: 10px auto 0;
+}
+
+.register .modal-dialog {
+  max-width: 640px;
+}
+
 section {
   padding: 35px 0;
   overflow: hidden;

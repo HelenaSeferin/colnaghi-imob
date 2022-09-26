@@ -46,7 +46,8 @@ class Header extends HTMLElement {
                 <a class="nav-link" href="favoritos.html">Meus Favoritos</a>
               </li>
               <li>
-                <a class="getstarted" href="#">Entrar</a>
+                <a class="getstarted" href="#" data-toggle="modal"
+                data-target="#modal-register">Entrar</a>
               </li>
             </ul>
                   

@@ -1,0 +1,240 @@
+.register {
+  .register-data,
+  .register-email,
+  .register-password {
+    display: none;
+  }
+  .modal-header {
+    position: relative;
+    border-bottom: none;
+    padding: 0;
+    .close {
+      position: absolute;
+      right: 0;
+      top: -20px;
+    }
+  }
+
+  .register-header {
+    border-bottom: 1px solid #000000;
+  }
+  .register-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #000000;
+    font-size: 10px;
+    color: #000000;
+
+    @media (max-width: 606px) {
+      display: block;
+      padding: 16px 0;
+
+      .register-col {
+        padding: 10px 0;
+      }
+    }
+    button {
+      background: transparent;
+      border: none;
+    }
+  }
+
+  .register-col {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+
+    @media (max-width: 606px) {
+      display: block;
+      padding: 30px 0px;
+    }
+
+    .register-form {
+      padding-right: 30px;
+      border-right: 1px solid #000;
+
+      @media (max-width: 606px) {
+        padding-right: 0;
+        border-right: none;
+      }
+    }
+    .register-social {
+      padding-left: 46px;
+      @media (max-width: 606px) {
+        padding-left: 0;
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 10px;
+        color: $black;
+        padding: 10px 0;
+      }
+    }
+
+    .register-form {
+      @media (max-width: 606px) {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 30px;
+      }
+    }
+
+    .register-form,
+    .register-social {
+      width: calc(100% / 2);
+
+      @media (max-width: 606px) {
+        width: 100%;
+      }
+
+      .register-fb {
+        background: #4285f4;
+        border-radius: 25px;
+        font-weight: 700;
+        font-size: 12px;
+        text-align: center;
+        color: $background-2;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+
+        img {
+          margin-right: 23px;
+        }
+      }
+      .register-gl {
+        background: #f2f2f2;
+        border-radius: 25px;
+        font-weight: 500;
+        font-size: 11px;
+        text-align: center;
+        color: $black;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        img {
+          margin-right: 27px;
+          margin-left: -36px;
+        }
+      }
+      .btn {
+        padding: 5px;
+        width: 100%;
+        border-radius: 25px;
+      }
+      .form-connect {
+        .content-btn {
+          margin: 0 40px;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .modal-content {
+    padding: 40px 45px 5px;
+  }
+  .register-login {
+    .register-header {
+      color: #000000;
+      h3 {
+        font-weight: 400;
+        font-size: 15px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .register-data {
+    .register-header {
+      color: #000000;
+      h3 {
+        font-weight: 400;
+        font-size: 12px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 10px;
+      }
+    }
+    .content-btn {
+      margin: 0 30px;
+      .btn {
+        font-size: 11px;
+      }
+    }
+
+    .form-content {
+      .register-col {
+        padding: 0;
+      }
+    }
+  }
+
+  .register-email {
+    .register-header {
+      color: #000000;
+      h3 {
+        font-weight: 400;
+        font-size: 15px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+
+    .form-email {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 0;
+
+      textarea {
+        padding: 18px;
+      }
+      .btn {
+        width: 120px;
+        margin: 10px auto 0;
+      }
+    }
+  }
+
+  .register-password {
+    .register-header {
+      color: #000000;
+      h3 {
+        font-weight: 400;
+        font-size: 15px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+
+    .form-password {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 0;
+
+      .btn {
+        width: 153px;
+        margin: 10px auto 0;
+      }
+    }
+  }
+
+  .modal-dialog {
+    max-width: 640px;
+  }
+}

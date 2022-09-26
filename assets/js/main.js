@@ -760,5 +760,26 @@
     multiplyNode(document.querySelector('.district-box'), 20, true);
   })
  
+   $(".register-data-modal").click(function() {
+     $(".register-data").show();   
+     $(".register-login, .register-email, .register-password ").hide();
+   });
+
+   $(".register-email-modal").click(function() {
+    $(".register-email").show();   
+    $(".register-login, .register-data, .register-password ").hide();
+  });
+
+  $(".register-password-modal").click(function() {
+    $(".register-password").show();   
+    $(".register-login, .register-email, .register-data ").hide();
+  });
+
+  $(".register-login-modal").click(function() {
+    $(".register-login").show();   
+    $(".register-password, .register-email, .register-data ").hide();
+  });
+
+
   
 })()
