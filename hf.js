@@ -8,48 +8,51 @@ class Header extends HTMLElement {
 			  <img src="assets/img/logo.png" alt="">
 			 </a>
 		</h1>	  
-          <nav id="navbar" class="navbar">    
-            <ul class="nav-mobile">
-              <li class="bi-list bi-x desk-none"></li>
-              <li class="desk-none">
-                <a href="index.html" class="logo-mobile">
-                <img src="assets/img/logo.png" alt=""></a>
-              </li>
-              <li class="dropdown dropdown-mobile">
-                <a href="#">
-                  <span>Sobre nós</span> 
-                  <i class="bi bi-chevron-down"></i>
-                  </a>
-                <ul>
-                  <li>
-                    <a href="sobre.html">Sobre nós</a>
-                  </li>                  
-                  <li>
-                    <a href="#">Trabalhe conosco</a>
-                  </li>
-                </ul>
-              </li>
-			  </li>
+      <nav id="navbar" class="navbar">    
+        <ul class="nav-mobile">
+          <li class="bi-list bi-x desk-none"></li>
+          <li class="desk-none">
+            <a href="index.html" class="logo-mobile">
+            <img src="assets/img/logo.png" alt=""></a>
+          </li>
+          <li class="dropdown dropdown-mobile">
+            <a href="#">
+              <span>Sobre nós</span> 
+              <i class="bi bi-chevron-down"></i>
+              </a>
+            <ul>
               <li>
-                <a class="nav-link" href="#">Lançamentos</a>
+                <a href="sobre.html">Sobre nós</a>
+              </li>                  
+              <li>
+                <a href="#">Trabalhe conosco</a>
               </li>
+            </ul>
+          </li>
+			  </li>
+        <li>
+          <a class="nav-link" href="#">Lançamentos</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#">Litoral</a>
+        </li>
 			  <li>
 			  	<a class="nav-link" href="#">Comerciais</a>
 			  </li>
-              <li>
-                <a class="nav-link" href="anuncie.html">Anuncie seu imóvel</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Blog</a>
-             </li>			
-              <li>
-                <a class="nav-link" href="favoritos.html">Meus Favoritos</a>
-              </li>
-              <li>
-                <a class="getstarted" href="#" data-toggle="modal"
-                data-target="#modal-register">Entrar</a>
-              </li>
-            </ul>
+            <li>
+              <a class="nav-link" href="anuncie.html">Anuncie seu imóvel</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">Blog</a>
+            </li>			
+            <li>
+              <a class="nav-link" href="favoritos.html">Meus Favoritos</a>
+            </li>
+            <li>
+              <a class="getstarted close-menu " href="#" data-toggle="modal"
+              data-target="#modal-register">Entrar</a>
+            </li>
+          </ul>
                   
           </nav> 
           <div class=" mobile-nav-toggle">

@@ -1926,6 +1926,10 @@ a:hover {
   transition: 0.3s ease-in;
 }
 
+.pad-top {
+  padding-top: 40px;
+}
+
 .no-padding {
   padding: 0;
 }
@@ -2756,6 +2760,16 @@ a:hover {
   font-weight: 500;
 }
 
+#header .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .logo img {
+  width: 177px;
+}
+
 @media (max-width: 1450px) {
   #header .logo img {
     width: 145px;
@@ -2797,7 +2811,7 @@ a:hover {
 
 @media (max-width: 1024px) {
   #header .navbar ul li {
-    padding-bottom: 50px;
+    padding-bottom: 39px;
   }
   #header .navbar ul li:nth-child(1) {
     padding-bottom: 0;
@@ -3111,6 +3125,7 @@ footer {
   padding: 94px 0;
   color: #222222;
   font-size: 15px;
+  z-index: 9999;
 }
 
 @media (max-width: 1024px) {
@@ -6391,6 +6406,17 @@ input[type="checkbox"]:checked + label:after {
   }
 }
 
+.sticky2 {
+  position: fixed;
+  top: 30px;
+}
+
+@media (max-width: 1500px) {
+  .sticky2 {
+    top: 84px;
+  }
+}
+
 .bottom {
   position: absolute;
   bottom: 20px;
@@ -6714,6 +6740,13 @@ input[type="checkbox"]:checked + label:after {
   top: -20px;
 }
 
+@media (max-width: 500px) {
+  .register .modal-header .close {
+    right: -16px;
+    top: -24px;
+  }
+}
+
 .register .register-header {
   border-bottom: 1px solid #000000;
 }
@@ -6985,6 +7018,12 @@ input[type="checkbox"]:checked + label:after {
   max-width: 640px;
 }
 
+@media (max-width: 500px) {
+  .register .modal-dialog {
+    top: 0;
+  }
+}
+
 section {
   padding: 35px 0;
   overflow: hidden;
@@ -7099,7 +7138,6 @@ section .section-paragraph-small {
 }
 
 #section-tab ul {
-  position: fixed;
   list-style: none;
   padding-left: 0;
   margin-top: 80px;

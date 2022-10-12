@@ -341,6 +341,14 @@
   }
 }
 
+.sticky2 {
+  position: fixed;
+  top: 30px;
+
+  @media (max-width: 1500px) {
+    top: 84px;
+  }
+}
 .bottom {
   position: absolute;
   bottom: 20px;
